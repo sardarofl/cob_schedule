@@ -23,14 +23,12 @@ const UserSchema = mongoose.Schema({
     type:String,
     required:true
   },
-  max_number_of_rooms:{
-    type:Number
+  account_name:{
+    type:String,
+    required:true
   },
   isAdmin:{
     type:Boolean
-  },
-  workgroupID:{
-    type:String
   }
 });
 

@@ -15,10 +15,8 @@ router.post('/register',(req,res,next) => {
     username:req.body.username,
     password:req.body.password,
     account_ID:req.body.account_ID,
-    max_number_of_rooms:req.body.max_number_of_rooms,
-    isAdmin:req.body.isAdmin,
-    isSuperAdmin:req.body.isSuperAdmin,
-    workgroupID:req.body.workgroupID
+    account_name:req.body.account_name,
+    isAdmin:req.body.isAdmin
   });
 
   User.addUser(newUser, (err, user) =>{

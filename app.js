@@ -9,15 +9,15 @@ const passport = require('passport');
 
 
 //connect to database
-// mongoose.connect(config.database);
-// //on connection
-// mongoose.connection.on('connected', () => {
-//   console.log('connected to database '+config.database);
-// });
-// //on error
-// mongoose.connection.on('error', () => {
-//   console.log('Database Erro '+config.database);
-// });
+mongoose.connect(config.database);
+//on connection
+mongoose.connection.on('connected', () => {
+  console.log('connected to database '+config.database);
+});
+//on error
+mongoose.connection.on('error', () => {
+  console.log('Database Erro '+config.database);
+});
 
 //If you need it at some module
 // var multer  =   require('multer');
@@ -87,11 +87,12 @@ app.get('/',(req,res) =>{
 //routers
 const csvget = require('./routes/csvgets')
 const add = require('./routes/adds');
+const users = require('./routes/users');
 
 //use routers
 app.use('/csvgets',csvget);
 app.use('/additems',add);
-
+app.use('/users',users);
 
 
 app.get('/', (req,res) =>{
@@ -99,6 +100,10 @@ app.get('/', (req,res) =>{
 });
 
 app.get('/bemain/cobtansleyback', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
+});
+
+app.get('/bemain/login', (req,res) =>{
   res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
 });
 
