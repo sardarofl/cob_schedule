@@ -62,7 +62,7 @@ require('./config/passport')(passport);
 // app.set('view engine', 'ejs');
 
 //port
-const port = process.env.PORT || 3013;
+const port = process.env.PORT || 80;
 
 //cors
 app.use(cors());
