@@ -8,6 +8,7 @@
 # dependencies
 /node_modules
 /cobschedules
+/csv
 
 # IDEs and editors
 /.idea
