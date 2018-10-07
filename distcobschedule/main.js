@@ -546,7 +546,7 @@ var CobtansleybackComponent = /** @class */ (function () {
         formData.append('bodydummy', "dummy");
         formData.append('image', files[0], files[0].name);
         var json_arr = JSON.stringify(formData);
-        console.log(formData);
+        //console.log(formData);
         this.adddataService.sendCSV(formData).subscribe(function (res) {
             _this.snackBar.open('Schedule Uploaded', 'OK', {
                 duration: 3000
@@ -585,7 +585,7 @@ var CobtansleybackComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table{\r\n    position:fixed;\r\n    z-index: 10;\r\n    font-size:2.4em;\r\n    color:white;\r\n    margin-top:130px;\r\n    line-height: 88px;\r\n    text-align: center;\r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
+module.exports = "table{\r\n    position:fixed;\r\n    z-index: 10;\r\n    font-size:3em;\r\n    color:white;\r\n    margin-top:130px;\r\n    line-height: 88px;\r\n    text-align: center;\r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
 
 /***/ }),
 
@@ -596,7 +596,7 @@ module.exports = "table{\r\n    position:fixed;\r\n    z-index: 10;\r\n    font-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"/assets/tansley.PNG\" height=\"1080\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvgetdata | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td class=\"account_or_subject_column\">{{item.AccountName|shorten }}</td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
+module.exports = "<img src=\"/assets/tansley.PNG\" height=\"1080\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvgetdata | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td [style.font-size]=\"tableStyle\" class=\"account_or_subject_column\"><span>{{item.AccountName|shorten:20 }}</span></td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
 
 /***/ }),
 
@@ -631,6 +631,7 @@ var CobtansleyfrntComponent = /** @class */ (function () {
         var _this = this;
         this.getDataService = getDataService;
         this.csvgetdata = [];
+        this.tableStyle = '1em';
         setInterval(function () {
             _this.refreshData();
         }, 10000);
@@ -653,20 +654,10 @@ var CobtansleyfrntComponent = /** @class */ (function () {
                 var Event_Day_End_milliseconds = Event_Day_Start_milliseconds + 86400000;
                 var StartTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].StartTime, 'h:mmA');
                 var EndTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].EndTime, 'h:mmA');
-                //  console.log(StartTime_moment.valueOf())
-                //console.log(Event_Day.setTime(Date.parse(data[i].StartTime))+ " " +data[i].StartTime)
-                // StartTime_moment.hour
-                //  let StartTimeString =new Date(Event_Day_Start.toDateString +data[i].StartTime) ;
-                //  console.log("Start Hour "+StartTimeString)
-                //  let datetime = new Date(Event_Day.toTimeString() + StartTimeString + 'Z');
-                // console.log(today_milliseconds)
-                // console.log(Event_Day_Start_milliseconds)
-                // console.log(Event_Day_End_milliseconds)
                 if (today_milliseconds > Event_Day_Start_milliseconds && today_milliseconds < Event_Day_End_milliseconds) {
-                    // console.log("Start " +StartTime_moment.valueOf())
-                    // console.log("End " +EndTime_moment.valueOf())
-                    if (today.getTime() >= StartTime_moment.valueOf() - 7200000 && today.getTime() < EndTime_moment.valueOf() + 1800000)
+                    if (today.getTime() >= StartTime_moment.valueOf() - 7200000 && today.getTime() < EndTime_moment.valueOf() + 1800000) {
                         _this.csvgetdata.push(data[i]);
+                    }
                 }
             }
             for (var i = 0; i < _this.csvgetdata.length; i++) {
@@ -675,6 +666,9 @@ var CobtansleyfrntComponent = /** @class */ (function () {
                 }
                 if (_this.csvgetdata[i].Service == 'Meeting' || _this.csvgetdata[i].Service == 'Social') {
                     _this.csvgetdata[i].AccountName = _this.csvgetdata[i].Subject;
+                }
+                if (_this.csvgetdata[i].AccountName.length > 40) {
+                    _this.tableStyle = "0.8em";
                 }
             }
             _this.event_counter = _this.event_counter + 8;
@@ -1181,7 +1175,7 @@ var ShortenPipe = /** @class */ (function () {
     }
     ShortenPipe.prototype.transform = function (value, limit) {
         // if (value.length > limit) {
-        //   return value.substr(0, limit) + ' ...';
+        //   value = value.replace(value,'<div style="font-size:2.4em;">'+value+'</div>')
         // }
         value = value.replace('FWS', '');
         return value;
