@@ -542,7 +542,7 @@ var CobtansleybackComponent = /** @class */ (function () {
         var _this = this;
         var files = this.elem.nativeElement.querySelector('#image').files;
         var formData = new FormData();
-        console.log(files[0]);
+        //console.log(files[0]);
         formData.append('bodydummy', "dummy");
         formData.append('image', files[0], files[0].name);
         var json_arr = JSON.stringify(formData);
