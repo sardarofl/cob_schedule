@@ -1,5 +1,285 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	var module = __webpack_require__(id);
+	return module;
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error('Cannot find module "' + req + '".');
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -101,14 +381,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_getdata_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/getdata.service */ "./src/app/services/getdata.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var ngx_dropzone_wrapper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-dropzone-wrapper */ "./node_modules/ngx-dropzone-wrapper/dist/ngx-dropzone-wrapper.es5.js");
-/* harmony import */ var node_modules_angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! node_modules/@angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _services_adddata_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/adddata.service */ "./src/app/services/adddata.service.ts");
-/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
-/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
-/* harmony import */ var _components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/guards/auth.guard */ "./src/app/components/guards/auth.guard.ts");
-/* harmony import */ var _shorten_pipe__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./shorten.pipe */ "./src/app/shorten.pipe.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var node_modules_angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! node_modules/@angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _services_adddata_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/adddata.service */ "./src/app/services/adddata.service.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
+/* harmony import */ var _components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/guards/auth.guard */ "./src/app/components/guards/auth.guard.ts");
+/* harmony import */ var _shorten_pipe__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./shorten.pipe */ "./src/app/shorten.pipe.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -133,12 +414,13 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var appRoutes = [
     //, canActivate:[AuthGuard]
     { path: 'bemain', component: _components_mainback_mainback_component__WEBPACK_IMPORTED_MODULE_6__["MainbackComponent"],
         children: [
-            { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_14__["LoginComponent"] },
-            { path: 'cobtansleyback', component: _components_cobtansleyback_cobtansleyback_component__WEBPACK_IMPORTED_MODULE_5__["CobtansleybackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_16__["AuthGuard"]] },
+            { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"] },
+            { path: 'cobtansleyback', component: _components_cobtansleyback_cobtansleyback_component__WEBPACK_IMPORTED_MODULE_5__["CobtansleybackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
             { path: '**', redirectTo: 'login' }
         ]
     },
@@ -163,21 +445,23 @@ var AppModule = /** @class */ (function () {
                 _components_cobtansleyfrnt_cobtansleyfrnt_component__WEBPACK_IMPORTED_MODULE_4__["CobtansleyfrntComponent"],
                 _components_cobtansleyback_cobtansleyback_component__WEBPACK_IMPORTED_MODULE_5__["CobtansleybackComponent"],
                 _components_mainback_mainback_component__WEBPACK_IMPORTED_MODULE_6__["MainbackComponent"],
-                _components_login_login_component__WEBPACK_IMPORTED_MODULE_14__["LoginComponent"],
-                _shorten_pipe__WEBPACK_IMPORTED_MODULE_17__["ShortenPipe"]
+                _components_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"],
+                _shorten_pipe__WEBPACK_IMPORTED_MODULE_18__["ShortenPipe"]
             ],
             imports: [
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes),
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_http__WEBPACK_IMPORTED_MODULE_11__["HttpModule"],
-                node_modules_angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"],
+                _angular_http__WEBPACK_IMPORTED_MODULE_12__["HttpModule"],
+                node_modules_angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"],
                 ngx_dropzone_wrapper__WEBPACK_IMPORTED_MODULE_9__["DropzoneModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSnackBarModule"]
             ],
-            providers: [_services_getdata_service__WEBPACK_IMPORTED_MODULE_7__["GetdataService"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_13__["AdddataService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_15__["AuthenticationService"], _components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_16__["AuthGuard"]],
+            providers: [_services_getdata_service__WEBPACK_IMPORTED_MODULE_7__["GetdataService"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_14__["AdddataService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_16__["AuthenticationService"], _components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
@@ -195,7 +479,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n.custom-file-upload {\r\n    border: 2px dashed #1A237E;\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    cursor: pointer;\r\n    color:black;\r\n    line-height: 50px;\r\n    font-size: 2.0em;\r\n}\r\ninput[type=\"file\"] {\r\n    display: none;\r\n}\r\n.full-width {\r\n  width: 100vw;\r\n  position: relative;\r\n  left: 50%;\r\n  right: 50%;\r\n  margin-left: -50vw;\r\n  margin-right: -50vw;\r\n}"
+module.exports = "\r\n.custom-file-upload {\r\n    border: 2px solid  #1A237E;\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    cursor: pointer;\r\n    color:black;\r\n    line-height: 50px;\r\n    font-size: 2.0em;\r\n}\r\ninput[type=\"file\"] {\r\n    display: none;\r\n}\r\n.full-width {\r\n  width: 100vw;\r\n  position: relative;\r\n  left: 50%;\r\n  right: 50%;\r\n  margin-left: -50vw;\r\n  margin-right: -50vw;\r\n}"
 
 /***/ }),
 
@@ -222,6 +506,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobtansleybackComponent", function() { return CobtansleybackComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/adddata.service */ "./src/app/services/adddata.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -233,11 +518,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var CobtansleybackComponent = /** @class */ (function () {
-    function CobtansleybackComponent(elem, adddataService) {
+    function CobtansleybackComponent(snackBar, elem, adddataService) {
+        this.snackBar = snackBar;
         this.elem = elem;
         this.adddataService = adddataService;
     }
+    CobtansleybackComponent.prototype.openSnackBar = function () {
+    };
     CobtansleybackComponent.prototype.ngOnInit = function () {
     };
     CobtansleybackComponent.prototype.onUploadSuccess = function (event) {
@@ -247,6 +536,7 @@ var CobtansleybackComponent = /** @class */ (function () {
         console.log(event);
     };
     CobtansleybackComponent.prototype.addCSV = function () {
+        var _this = this;
         var files = this.elem.nativeElement.querySelector('#image').files;
         var formData = new FormData();
         console.log(files[0]);
@@ -254,7 +544,11 @@ var CobtansleybackComponent = /** @class */ (function () {
         formData.append('image', files[0], files[0].name);
         var json_arr = JSON.stringify(formData);
         console.log(formData);
-        this.adddataService.sendCSV(formData).subscribe(function (res) { alert("File uploaded"); });
+        this.adddataService.sendCSV(formData).subscribe(function (res) {
+            _this.snackBar.open('Data submitted', 'OK', {
+                duration: 3000
+            });
+        });
         // for(let i =0; i < files.length; i++){
         //       formData.append('image',files[i],files[i].name);
         //       console.log("appended "+files[i].name);
@@ -272,7 +566,7 @@ var CobtansleybackComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./cobtansleyback.component.html */ "./src/app/components/cobtansleyback/cobtansleyback.component.html"),
             styles: [__webpack_require__(/*! ./cobtansleyback.component.css */ "./src/app/components/cobtansleyback/cobtansleyback.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__["AdddataService"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__["AdddataService"]])
     ], CobtansleybackComponent);
     return CobtansleybackComponent;
 }());
@@ -288,7 +582,7 @@ var CobtansleybackComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table{\r\n    position:fixed;\r\n    z-index: 10;\r\n    font-size:2.4em;\r\n    color:white;\r\n    margin-top:130px;\r\n    line-height: 88px;\r\n    text-align: center;\r\n}\r\n\r\n.time_column{\r\n    max-width: 390px;\r\n    min-width: 390px;\r\n    width: 390px;\r\n}\r\n\r\n.facility_column{\r\n    max-width: 248px;\r\n    min-width: 248px;\r\n    width: 248px;\r\n}\r\n\r\n.teamevent_column{\r\n    max-width: 531px;\r\n    min-width: 531px;\r\n    width: 531px;\r\n}\r\n\r\n.room_column{\r\n    max-width: 123px;\r\n    min-width: 123px;\r\n    width: 123px;\r\n}\r\n\r\n.team2_column{\r\n    max-width: 435px;\r\n    min-width: 435px;\r\n    width: 435px;\r\n}\r\n\r\n.room2_column{\r\n    max-width: 160px;\r\n    min-width: 160px;\r\n    width: 160px;\r\n}"
+module.exports = "table{\r\n    position:fixed;\r\n    z-index: 10;\r\n    font-size:2.4em;\r\n    color:white;\r\n    margin-top:130px;\r\n    line-height: 88px;\r\n    text-align: center;\r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
 
 /***/ }),
 
@@ -299,7 +593,7 @@ module.exports = "table{\r\n    position:fixed;\r\n    z-index: 10;\r\n    font-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"/assets/cob appleby2.PNG\" height=\"1080\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvgetdata | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td class=\"facility_column center\">{{item.Facility | shorten:9}}</td>\n    <td class=\"teamevent_column center\">{{item.Subject | shorten:29 }}</td>\n    <td class=\"room_column center\">-</td>\n    <td class=\"team2_column center\">{{item.Service | shorten:23 }}</td>\n    <td class=\"room2_column center\">-</td>\n  </tr>\n</table>\n"
+module.exports = "<img src=\"/assets/tansley.PNG\" height=\"1080\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvgetdata | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td class=\"account_or_subject_column\">{{item.AccountName|shorten }}</td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
 
 /***/ }),
 
@@ -315,6 +609,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobtansleyfrntComponent", function() { return CobtansleyfrntComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_getdata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/getdata.service */ "./src/app/services/getdata.service.ts");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/moment/moment.js */ "./node_modules/moment/moment.js");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -326,6 +622,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var CobtansleyfrntComponent = /** @class */ (function () {
     function CobtansleyfrntComponent(getDataService) {
         var _this = this;
@@ -333,7 +630,7 @@ var CobtansleyfrntComponent = /** @class */ (function () {
         this.csvgetdata = [];
         setInterval(function () {
             _this.refreshData();
-        }, 15000);
+        }, 10000);
     }
     CobtansleyfrntComponent.prototype.ngOnInit = function () {
         console.log("data");
@@ -346,10 +643,39 @@ var CobtansleyfrntComponent = /** @class */ (function () {
             _this.csvgetdata = [];
             console.log(data);
             for (var i = _this.event_counter; i < data.length; i++) {
-                _this.csvgetdata.push(data[i]);
+                var today = new Date();
+                var today_milliseconds = today.getTime();
+                var Event_Day_Start = new Date(data[i].Date);
+                var Event_Day_Start_milliseconds = Event_Day_Start.getTime();
+                var Event_Day_End_milliseconds = Event_Day_Start_milliseconds + 86400000;
+                var StartTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].StartTime, 'h:mmA');
+                var EndTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].EndTime, 'h:mmA');
+                //  console.log(StartTime_moment.valueOf())
+                //console.log(Event_Day.setTime(Date.parse(data[i].StartTime))+ " " +data[i].StartTime)
+                // StartTime_moment.hour
+                //  let StartTimeString =new Date(Event_Day_Start.toDateString +data[i].StartTime) ;
+                //  console.log("Start Hour "+StartTimeString)
+                //  let datetime = new Date(Event_Day.toTimeString() + StartTimeString + 'Z');
+                // console.log(today_milliseconds)
+                // console.log(Event_Day_Start_milliseconds)
+                // console.log(Event_Day_End_milliseconds)
+                if (today_milliseconds > Event_Day_Start_milliseconds && today_milliseconds < Event_Day_End_milliseconds) {
+                    // console.log("Start " +StartTime_moment.valueOf())
+                    // console.log("End " +EndTime_moment.valueOf())
+                    if (today.getTime() >= StartTime_moment.valueOf() - 7200000 && today.getTime() < EndTime_moment.valueOf() + 1800000)
+                        _this.csvgetdata.push(data[i]);
+                }
+            }
+            for (var i = 0; i < _this.csvgetdata.length; i++) {
+                if (_this.csvgetdata[i].AccountName == '') {
+                    _this.csvgetdata[i].AccountName = _this.csvgetdata[i].Subject;
+                }
+                if (_this.csvgetdata[i].Service == 'Meeting' || _this.csvgetdata[i].Service == 'Social') {
+                    _this.csvgetdata[i].AccountName = _this.csvgetdata[i].Subject;
+                }
             }
             _this.event_counter = _this.event_counter + 8;
-            if (_this.event_counter >= data.length) {
+            if (_this.event_counter >= _this.csvgetdata.length) {
                 _this.event_counter = 0;
             }
         });
@@ -800,9 +1126,10 @@ var ShortenPipe = /** @class */ (function () {
     function ShortenPipe() {
     }
     ShortenPipe.prototype.transform = function (value, limit) {
-        if (value.length > limit) {
-            return value.substr(0, limit) + ' ...';
-        }
+        // if (value.length > limit) {
+        //   return value.substr(0, limit) + ' ...';
+        // }
+        value = value.replace('FWS', '');
         return value;
     };
     ShortenPipe = __decorate([
