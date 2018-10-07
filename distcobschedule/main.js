@@ -548,7 +548,7 @@ var CobtansleybackComponent = /** @class */ (function () {
         var json_arr = JSON.stringify(formData);
         console.log(formData);
         this.adddataService.sendCSV(formData).subscribe(function (res) {
-            _this.snackBar.open('Data submitted', 'OK', {
+            _this.snackBar.open('Schedule Uploaded', 'OK', {
                 duration: 3000
             });
         });
@@ -914,15 +914,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var MainbackComponent = /** @class */ (function () {
     function MainbackComponent(authenticationService, router, authService) {
+        var _this = this;
         this.authenticationService = authenticationService;
         this.router = router;
         this.authService = authService;
+        router.events.subscribe(function (event) {
+            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationEnd"]) {
+                _this.authService.getProfile().subscribe(function (userdata) {
+                    _this.cobname = userdata[0].user.account_name;
+                }, function (err) {
+                    _this.cobname = "COB Scheduling Panel - Login Page";
+                    return false;
+                });
+            }
+        });
     }
     MainbackComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.authService.getProfile().subscribe(function (userdata) {
-            _this.cobname = userdata[0].user.account_name;
-        });
     };
     // onLogout(){
     //   this.authenticationService.logout().subscribe(data =>{
