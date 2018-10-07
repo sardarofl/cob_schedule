@@ -670,6 +670,9 @@ var CobtansleyfrntComponent = /** @class */ (function () {
                 if (_this.csvgetdata[i].AccountName.length > 40) {
                     _this.tableStyle = "0.8em";
                 }
+                else {
+                    _this.tableStyle = "1em";
+                }
             }
             _this.event_counter = _this.event_counter + 8;
             if (_this.event_counter >= _this.csvgetdata.length) {
