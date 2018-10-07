@@ -507,6 +507,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/adddata.service */ "./src/app/services/adddata.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/authentication.service */ "./src/app/services/authentication.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -519,11 +520,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var CobtansleybackComponent = /** @class */ (function () {
-    function CobtansleybackComponent(snackBar, elem, adddataService) {
+    function CobtansleybackComponent(snackBar, elem, adddataService, authService) {
         this.snackBar = snackBar;
         this.elem = elem;
         this.adddataService = adddataService;
+        this.authService = authService;
     }
     CobtansleybackComponent.prototype.openSnackBar = function () {
     };
@@ -566,7 +569,7 @@ var CobtansleybackComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./cobtansleyback.component.html */ "./src/app/components/cobtansleyback/cobtansleyback.component.html"),
             styles: [__webpack_require__(/*! ./cobtansleyback.component.css */ "./src/app/components/cobtansleyback/cobtansleyback.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__["AdddataService"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__["AdddataService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]])
     ], CobtansleybackComponent);
     return CobtansleybackComponent;
 }());
@@ -764,7 +767,7 @@ module.exports = ".fullwidth{\r\n    width:100%;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<br><br>\n\n<mat-card class=\"mt-20\">\n  <mat-card-title>Login</mat-card-title>\n  <hr>\n  <mat-card-content>\n    <div fxLayout=\"column\">\n      <form>\n          <form (submit)=\"login()\">\n              <div class=\"form-group\">\n                <!-- <label>Email</label> -->\n                <input type=\"text\" placeholder=\"Enter your email\" class=\"form-control\" [(ngModel)]=\"email\" name=\"email\">\n              </div>\n              <div class=\"form-group\">\n                <!-- <label>Password</label> -->\n                <input type=\"password\" placeholder=\"Enter your password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n              </div><br>\n              <input type=\"submit\" class=\"btn indigo fullwidth\" value=\"Login\">\n            </form>\n      </form>\n     \n    </div>\n  </mat-card-content>\n</mat-card>\n"
+module.exports = "<br><br>\n\n<mat-card class=\"mt-20\">\n  <mat-card-title>Login</mat-card-title>\n  <hr>\n  <mat-card-content>\n    <div fxLayout=\"column\">\n      <form>\n          <form (submit)=\"onLoginSubmit()\">\n              <div class=\"form-group\">\n                <!-- <label>Email</label> -->\n                <input type=\"text\" placeholder=\"Enter your email\" class=\"form-control\" [(ngModel)]=\"email\" name=\"email\">\n              </div>\n              <div class=\"form-group\">\n                <!-- <label>Password</label> -->\n                <input type=\"password\" placeholder=\"Enter your password\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\">\n              </div><br>\n              <input type=\"submit\" class=\"btn indigo fullwidth\" value=\"Login\">\n            </form>\n      </form>\n     \n    </div>\n  </mat-card-content>\n</mat-card>\n"
 
 /***/ }),
 
@@ -803,21 +806,48 @@ var LoginComponent = /** @class */ (function () {
     }
     LoginComponent.prototype.ngOnInit = function () {
     };
-    LoginComponent.prototype.login = function () {
+    // login(){
+    //   const userData = {
+    //     email:this.email,
+    //     password:this.password
+    //   }
+    //   this.authService.login(userData).subscribe(data =>{
+    //     console.log(data);
+    //     localStorage.setItem('menuToken', JSON.stringify(data));
+    //     console.log(this.authService.loggedIn())
+    //     if(this.authService.loggedIn())
+    //     {
+    //       console.log('logged in')
+    //       this.router.navigate(['/bemain/cobtansleyback'])
+    //     }
+    //   }, err =>{
+    //     alert("wrong email or password");
+    //   })
+    // }
+    LoginComponent.prototype.onLoginSubmit = function () {
         var _this = this;
-        var userData = {
+        var user = {
             email: this.email,
             password: this.password
         };
-        this.authService.login(userData).subscribe(function (data) {
-            console.log(data);
-            localStorage.setItem('menuToken', JSON.stringify(data));
-            if (_this.authService.loggedIn()) {
-                console.log('logged in');
+        this.authService.authenticateUser(user).subscribe(function (data) {
+            if (data.success) {
+                _this.authService.storeUserData(data.token, data.user);
+                //    this.flashMessage.show('you are now logged in',{cssClass:'alert-success', timeout:5000});
+                // if(user.username == 'admin@my-media.tv')
+                // {
+                //   this.router.navigate(['admin/accounts']);
+                // }else{
+                //   this.router.navigate(['/bemain/cobtansleyback']);
+                // }
                 _this.router.navigate(['/bemain/cobtansleyback']);
+                //  location.reload();
             }
-        }, function (err) {
-            alert("wrong email or password");
+            else {
+                //    this.flashMessage.show(data.msg,{cssClass:'alert-danger', timeout:5000});
+                _this.router.navigate(['login']);
+                alert("Wrong Username or Password");
+            }
         });
     };
     LoginComponent = __decorate([
@@ -853,7 +883,7 @@ module.exports = ".toolbar_spacer {\r\n    flex: 1 1 auto;\r\n  }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\r\n    <mat-toolbar-row>\r\n        <span>COB Tansley Schedule</span>\r\n        <span class=\"toolbar_spacer\"></span>\r\n        <!-- <button mat-button [routerLink]=\"['/bemenu/login']\" *ngIf=\"!isLoggednIn\">login</button> -->\r\n        <!-- <button mat-button>logout</button>  -->\r\n        <button mat-button (click)=\"onLogout()\" *ngIf=\"authenticationService.loggedIn()\">logout</button>\r\n    </mat-toolbar-row>\r\n\r\n</mat-toolbar>\r\n<br>\r\n<div class=\"container\"><router-outlet ></router-outlet></div>"
+module.exports = "<mat-toolbar color=\"primary\">\r\n    <mat-toolbar-row>\r\n        <span>{{this.cobname}}</span>\r\n        <span class=\"toolbar_spacer\"></span>\r\n        <!-- <button mat-button [routerLink]=\"['/bemenu/login']\" *ngIf=\"!isLoggednIn\">login</button> -->\r\n        <!-- <button mat-button>logout</button>  -->\r\n        <button mat-button (click)=\"onLogout()\" *ngIf=\"authenticationService.loggedIn()\">logout</button>\r\n    </mat-toolbar-row>\r\n\r\n</mat-toolbar>\r\n<br>\r\n<div class=\"container\"><router-outlet ></router-outlet></div>"
 
 /***/ }),
 
@@ -883,11 +913,16 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var MainbackComponent = /** @class */ (function () {
-    function MainbackComponent(authenticationService, router) {
+    function MainbackComponent(authenticationService, router, authService) {
         this.authenticationService = authenticationService;
         this.router = router;
+        this.authService = authService;
     }
     MainbackComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.authService.getProfile().subscribe(function (userdata) {
+            _this.cobname = userdata[0].user.account_name;
+        });
     };
     // onLogout(){
     //   this.authenticationService.logout().subscribe(data =>{
@@ -906,7 +941,7 @@ var MainbackComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./mainback.component.html */ "./src/app/components/mainback/mainback.component.html"),
             styles: [__webpack_require__(/*! ./mainback.component.css */ "./src/app/components/mainback/mainback.component.css")]
         }),
-        __metadata("design:paramtypes", [_services_authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+        __metadata("design:paramtypes", [_services_authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"]])
     ], MainbackComponent);
     return MainbackComponent;
 }());
@@ -989,8 +1024,10 @@ var AdddataService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthenticationService", function() { return AuthenticationService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var angular2_jwt__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular2-jwt */ "./node_modules/angular2-jwt/angular2-jwt.js");
+/* harmony import */ var angular2_jwt__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(angular2_jwt__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1003,37 +1040,47 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var AuthenticationService = /** @class */ (function () {
     function AuthenticationService(http) {
         this.http = http;
     }
     AuthenticationService.prototype.registerUser = function (user) {
-        var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/api/users/register', user, { headers: headers });
+        return this.http.post('/users/register', user, { headers: headers })
+            .map(function (res) { return res.json(); });
     };
-    AuthenticationService.prototype.login = function (user) {
-        var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+    AuthenticationService.prototype.updatedUserPassword = function (user) {
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/users/authenticate', user, { headers: headers });
-        //;
+        return this.http.put('/users/update_user', user, { headers: headers })
+            .map(function (res) { return res.json(); });
+    };
+    AuthenticationService.prototype.authenticateUser = function (user) {
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('/users/authenticate', user, { headers: headers })
+            .map(function (res) { return res.json(); });
     };
     AuthenticationService.prototype.getProfile = function () {
-        var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.get('/users/profile', { headers: headers });
+        return this.http.get('/users/profile', { headers: headers })
+            .map(function (res) { return res.json(); });
     };
     AuthenticationService.prototype.isAdmin = function () {
-        var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]();
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.get('/users/profile', { headers: headers });
+        return this.http.get('/users/profile', { headers: headers })
+            .map(function (res) { return res.json(); });
     };
     AuthenticationService.prototype.loggedIn = function () {
-        return localStorage.getItem('menuToken') ? true : false;
+        return Object(angular2_jwt__WEBPACK_IMPORTED_MODULE_3__["tokenNotExpired"])('id_token');
     };
     AuthenticationService.prototype.storeUserData = function (token, user) {
         localStorage.setItem('id_token', token);
@@ -1052,7 +1099,7 @@ var AuthenticationService = /** @class */ (function () {
     };
     AuthenticationService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
     ], AuthenticationService);
     return AuthenticationService;
 }());

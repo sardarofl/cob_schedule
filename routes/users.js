@@ -108,13 +108,14 @@ router.post('/add_rooms_to_users:accountID',(req,res,next) => {
 
 //Authenticate
 router.post('/authenticate',(req,res,next) => {
-  console.log(req);
-  const email = req.body.username;
+  //console.log(req);
+  const email = req.body.email;
   const password = req.body.password;
 
   User.getUserByUsername(email, (err, user) =>{
     if(err) throw err;
     if(!user){
+      console.log("user not found")
         return res.json({success:false, msg:'User not found'});
     }
     User.comparePassword(password, user.password, (err, isMatch) =>{
@@ -130,7 +131,10 @@ router.post('/authenticate',(req,res,next) => {
             id:user._id,
             name:user.name,
             username:user.username,
-            email: user.email
+            email: user.email,
+            account_ID:user.account_ID,
+            account_name:user.account_name
+
           }
         });
       }else{
