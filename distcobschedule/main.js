@@ -646,6 +646,7 @@ var CobtansleyfrntComponent = /** @class */ (function () {
         var _this = this;
         this.getDataService.getTansleyCSVData("/csvgets/csvgets").map(function (response) { return response.json(); }).subscribe(function (data) {
             _this.csvgetdata = [];
+            _this.csvdatatobedisplayed = [];
             //console.log(data);
             for (var i = 0; i < data.length; i++) {
                 var today = new Date();
