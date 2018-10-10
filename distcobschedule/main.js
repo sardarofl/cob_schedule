@@ -663,7 +663,8 @@ var CobtansleyfrntComponent = /** @class */ (function () {
                 }
             }
             for (var i = _this.event_counter; i < _this.csvgetdata.length; i++) {
-                _this.csvdatatobedisplayed[i] = _this.csvgetdata[i];
+                _this.csvdatatobedisplayed.push(_this.csvgetdata[i]);
+                //console.log(this.csvdatatobedisplayed[i])
             }
             for (var i = 0; i < _this.csvdatatobedisplayed.length; i++) {
                 if (_this.csvdatatobedisplayed[i].AccountName == '') {
