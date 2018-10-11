@@ -9451,6 +9451,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+if (document['documentMode'] || /Edge/.test(navigator.userAgent)) {
+    window.__Zone_enable_cross_context_check = true;
+}
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 /** IE10 and IE11 requires the following for the Reflect API. */
