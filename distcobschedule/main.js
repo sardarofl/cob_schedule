@@ -662,6 +662,7 @@ var CobtansleyfrntComponent = /** @class */ (function () {
                     }
                 }
             }
+            var fontChange = false;
             for (var i = _this.event_counter; i < _this.csvgetdata.length; i++) {
                 _this.csvdatatobedisplayed.push(_this.csvgetdata[i]);
                 //console.log(this.csvdatatobedisplayed[i])
@@ -674,11 +675,14 @@ var CobtansleyfrntComponent = /** @class */ (function () {
                     _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
                 }
                 if (_this.csvdatatobedisplayed[i].AccountName.length > 40) {
-                    _this.tableStyle = "0.8em";
+                    console.log("font ");
+                    _this.tableStyle = "0.7em";
+                    fontChange = true;
                 }
-                else {
-                    _this.tableStyle = "1em";
-                }
+            }
+            if (!fontChange) {
+                console.log();
+                _this.tableStyle = "1em";
             }
             _this.event_counter = _this.event_counter + 8;
             if (_this.event_counter >= _this.csvgetdata.length) {

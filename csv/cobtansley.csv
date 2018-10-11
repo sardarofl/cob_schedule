@@ -1,145 +1,51 @@
 Date,StartTime,EndTime,Facility,Service,Subject,AccountName
-10-Oct-18,3:44PM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
-10-Oct-18,8:00AM,8:50AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
-10-Oct-18,8:30AM,9:30AM,Community Room 1,Yoga,Yoga for Golf 55+,
-10-Oct-18,9:30AM,11:30AM,Community Room 5,Writing and Public Speaking,Short Story Writing Workshop 55+,
-10-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
-10-Oct-18,9:15AM,10:05AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
-10-Oct-18,10:00AM,11:00AM,Community Room 1,Yoga,Chair Yoga 55+,
-10-Oct-18,10:30AM,11:30AM,Community Room 6,Creative Kids,Do-Re-Mi 1-4 Parent and Tot,
-10-Oct-18,11:00AM,12:00PM,Gym Single 2,Zumba,Zumba Toning 19+,
-10-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Recreational Pickleball,Pickleball 55+ Level 2.5-3.5,
-10-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Pickleball,Pickleball - 2.5-3.5 Recreational Play 19+,
-10-Oct-18,3:00PM,4:30PM,Community Room 6,General Interest,Guitar 55+,
-10-Oct-18,6:00PM,7:30PM,Community Room 1,Special Use,2018 Engineering For Kids,Sportball Tansley Woods FWS 2018/19
-10-Oct-18,6:30PM,8:00PM,Community Room 4,Rooms and Auditoriums - Other,Cindy Chen Art Tansley Woods FWS 2018/19,FWS Cindy Chen Art
-10-Oct-18,7:00PM,10:00PM,Community Room 5,No Socks for Ivan,No Socks For Ivan Grade 6-12,
-10-Oct-18,7:15PM,9:15PM,Community Room 3,Meeting,SVG S,
-10-Oct-18,7:15PM,9:15PM,Community Room 3,Meeting,SVG S,
-10-Oct-18,7:00PM,10:00PM,Community Room 5,No Socks for Ivan,No Socks For Ivan Grade 6-12,
-10-Oct-18,7:15PM,9:15PM,Community Room 3,Meeting,SVG S,
-10-Oct-18,7:15PM,9:15PM,Community Room 3,Meeting,SVG S,
-10-Oct-18,7:15PM,9:15PM,Community Room 3,Meeting,SVG S,
-10-Oct-18,7:15PM,9:15PM,Community Room 3,Meeting,SVG S,
-13-Oct-18,7:15AM,9:15AM,Gym Single 1,Basketball,Saturday Men's Basketball Tansley Woods FWS 2018/19,FWS Saturday Men's Basketball
-13-Oct-18,8:30AM,9:20AM,Gym Single 2,Fitness,Cardio Sculpt 19+,
-13-Oct-18,9:45AM,12:30PM,Gym Single 2,Gyms - Other,Sportball Tansley Woods FWS 2018/19,FWS Sportball
-13-Oct-18,10:00AM,12:30PM,Community Room 2,Meeting,Burlington Aquatic Devilrays - TW FWS 2018/19,FWS Burlington Aquatic Devilrays
-13-Oct-18,9:00AM,11:30AM,Community Room 3,Fitness Class,Paterson's Karate Works Tansley Woods FWS 2018/19,FWS Paterson's Karate Works
-13-Oct-18,9:00AM,1:00PM,Community Room 6,Dance Class,Bella Moon Studios - Fall 2018 Saturdays,FWS Bella Moon Studios
-13-Oct-18,9:30AM,12:00PM,Community Room 1,Active and Social,Dash and Splash (4-12yrs),
-13-Oct-18,12:30PM,3:30PM,Community Room 5,Swimming,Dunk & Dive 13-21,
-13-Oct-18,1:30PM,4:30PM,Community Room 4,Social,Evans Birthday ,Jordan Family
-13-Oct-18,1:30PM,4:30PM,Community Room 2,Meeting,FWS Redleaf Cultural Integration,FWS Redleaf Cultural Integration
-13-Oct-18,2:30PM,4:00PM,Community Room 1,Meeting,FWS Redleaf Cultural Integration - Haber TW 2018 2019,FWS Redleaf Cultural Integration
-13-Oct-18,4:00PM,6:00PM,Community Room 5,Meeting,"P&R Aquatics, New Staff Check-In",Parks & Recreation Aquatics COB
-14-Oct-18,8:30AM,12:30PM,Community Room 2,Meeting,FWS Starting Point Church,FWS Starting Point Church
-14-Oct-18,8:30AM,12:30PM,Community Room 6,Meeting,FWS Starting Point Church,FWS Starting Point Church
-14-Oct-18,8:30AM,12:30PM,Community Room 3,Meeting,FWS Starting Point Church,FWS Starting Point Church
-14-Oct-18,8:30AM,12:30PM,Community Room 5,Meeting,FWS Starting Point Church,FWS Starting Point Church
-14-Oct-18,10:00AM,12:00PM,Community Room 1,Meeting,FWS Starting Point Church,FWS Starting Point Church
-14-Oct-18,10:30AM,12:00PM,Community Room 4,Social,"Moshtagh, Cinthya",
-14-Oct-18,10:00AM,11:30AM,Gym Double 1/2,Basketball,Leone Basketball Tansley Woods FWS 2018/19,FWS Leone Basketball
-14-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Volleyball,Volleygirls Tansley Woods FWS 2018/19,FWS VolleyGirls
-14-Oct-18,3:30PM,5:30PM,Community Room 1,Meeting,"Selman, Diane","Selman, Diane"
-14-Oct-18,3:30PM,5:00PM,Gym Single 2,Recreational Pickleball,Pickleball 19+ Level 1.0-2.0,
-14-Oct-18,3:30PM,5:00PM,Gym Single 2,Pickleball,Pickleball - 1.0-2.0 Recreational Play 19+,
-14-Oct-18,3:30PM,5:30PM,Gym Single 1,Active Kids,Family Play Fit 5 months-8 years,
-14-Oct-18,5:00PM,6:30PM,Gym Single 2,Recreational Pickleball,Pickleball 19+ Level 2.5-3.5,
-14-Oct-18,5:00PM,6:30PM,Gym Single 2,Pickleball,Pickleball - 2.5-3.5 Recreational Play 19+,
-14-Oct-18,7:30PM,9:00PM,Gym Single 2,Basketball,2018 Damani Basketball,
-15-Oct-18,7:30AM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
-15-Oct-18,8:00AM,8:50AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
-15-Oct-18,9:15AM,10:05AM,Gym Single 2,Fitness,Walk Tone Stretch 19+,
-15-Oct-18,10:00AM,12:00PM,Community Room 1,Art,Drawing - Introduction 55+,
-15-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
-15-Oct-18,10:00AM,12:30PM,Community Room 6,Preschool,Get Ready to Jump 2-3.5  ,
-15-Oct-18,10:30AM,11:20AM,Gym Single 2,Fitness,Zumba 19+,
-15-Oct-18,12:30PM,2:30PM,Community Room 1,Art,Watercolour - Level One 55+,
-15-Oct-18,1:00PM,3:30PM,Community Room 6,Choir,Gospel Singers Choir 55+,
-15-Oct-18,1:00PM,3:00PM,Gym Single 2,Pickleball,Pickleball - Learn to Play 19+,
-15-Oct-18,12:30PM,3:00PM,Community Room 5,Games and Cards,Bridge Duplicate 55+,
-15-Oct-18,4:00PM,5:00PM,Gym Single 1,Gyms - Other,Kidsplay Sports with Coach David Tansley Woods FWS 2018/19,FWS Kidsplay Sports with Coach David
-15-Oct-18,5:00PM,6:00PM,Gym Double 1/2,Gyms - Other,Kidsplay Sports with Coach David Tansley Woods FWS 2018/19,FWS Kidsplay Sports with Coach David
-15-Oct-18,6:00PM,7:00PM,Gym Single 1,Gyms - Other,Kidsplay Sports with Coach David Tansley Woods FWS 2018/19,FWS Kidsplay Sports with Coach David
-15-Oct-18,7:00PM,10:00PM,Community Room 5,Games and Cards,Euchre 19+,
-15-Oct-18,7:30PM,8:10PM,Gym Single 2,Fitness,Cardio Sculpt 19+,
-15-Oct-18,7:30PM,9:30PM,Gym Single 1,Martial Arts,Burlington Kendo Club Tansley Woods FWS 2018/19,FWS Burlington Kendo Club
-15-Oct-18,8:30PM,10:00PM,Gym Single 2,Basketball,Alex Spyridakis Tansley Woods FWS 2018/19,FWS Alex Spyridakis
-15-Oct-18,9:30PM,11:00PM,Gym Single 1,Basketball,MacPherson Basketball Tansley Woods FWS 2018/19,FWS MacPherson Basketball
-16-Oct-18,7:30AM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
-16-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
-16-Oct-18,9:30AM,12:00PM,Community Room 6,Preschool,"1,2,3 Jump 3-5",
-16-Oct-18,10:30AM,12:30PM,Community Room 5,Writing and Public Speaking,Memoir and Narrative Writing Workshop 55+,
-16-Oct-18,9:30AM,10:20AM,Gym Single 2,Fitness,Cardio Sculpt 19+,
-16-Oct-18,11:30AM,12:30PM,Community Room 1,Pilates,Pilates - Beginner 55+,
-16-Oct-18,10:45AM,12:45PM,Gym Single 1,Active Kids,Play Fit 5 months-6 years with adult,
-16-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Recreational Pickleball,Pickleball 55+ Level 2.5-3.5,
-16-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Pickleball,Pickleball - 2.5-3.5 Recreational Play 19+,
-16-Oct-18,1:00PM,3:00PM,Community Room 6,Writing and Public Speaking,Poet's Circle 55+,
-16-Oct-18,1:00PM,3:30PM,Community Room 5,Games and Cards,Bridge Duplicate 55+,
-16-Oct-18,1:30PM,3:00PM,Community Room 1,Language,Spanish - Level One 55+,
-16-Oct-18,3:15PM,4:45PM,Community Room 1,Language,Spanish - Level Two 55+,
-16-Oct-18,4:00PM,5:30PM,Community Room 6,General Interest,Guitar 55+,
-16-Oct-18,5:00PM,8:00PM,Gym Single 2,Gyms - Other,Pizzazz Baton Tansley Woods FWS 2018/19,FWS Pizzazz Baton
-16-Oct-18,5:00PM,8:00PM,Gym Single 1,Gyms - Other,Pizzazz Baton Tansley Woods FWS 2018/19,FWS Pizzazz Baton
-16-Oct-18,6:00PM,8:30PM,Community Room 1,Martial Arts,Paterson's Karate Works Tansley Woods FWS 2018/19,FWS Paterson's Karate Works
-16-Oct-18,6:00PM,8:00PM,Community Room 2,School Age,You're the Chef 10-17,
-16-Oct-18,6:30PM,8:30PM,Community Room 4,Art,Tangle Art 19+,
-16-Oct-18,8:00PM,11:00PM,Gym Double 1/2,Volleyball,Halton Women's Volleyball Tansley Woods FWS 2018/19,FWS Halton Women's Volleyball
-16-Oct-18,7:00PM,8:30PM,Community Room 3,Fitness Class,Ashtanga Yoga Tansley Woods FWS 2018/19,FWS Ashtanga Yoga
-17-Oct-18,7:30AM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
-17-Oct-18,8:30AM,5:30PM,Community Room 1,Rooms and Auditoriums - Other,2018/19 Elections,Clerks COB
-17-Oct-18,8:30AM,6:00PM,Community Room 2,Rooms and Auditoriums - Other,2018/19 Elections,Clerks COB
-17-Oct-18,8:00AM,8:50AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
-17-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
-17-Oct-18,9:15AM,11:15AM,Community Room 5,Current Affairs,Current Affairs - In the News Round Table Discussion 55+,
-17-Oct-18,9:15AM,10:05AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
-17-Oct-18,10:00AM,12:30PM,Community Room 6,Preschool,Get Ready to Jump 2-3.5,
-17-Oct-18,10:30AM,11:30AM,Gym Single 2,Zumba,Zumba Gold 19+,
-17-Oct-18,5:30PM,6:00PM,Community Room 1,Rooms and Auditoriums - Other,2018/19 Elections,Clerks COB
-17-Oct-18,4:00PM,6:00PM,Gym Single 1,Gyms - Other,Kidsplay Sports with Coach David Tansley Woods FWS 2018/19,FWS Kidsplay Sports with Coach David
-17-Oct-18,7:00PM,9:00PM,Community Room 4,Meeting,The Alpha Course FWS 2018/19,FWS Starting Point Church
-17-Oct-18,6:00PM,7:00PM,Gym Single 1,Basketball,Angevaare Basketball Tansley Woods FWS 2018/19,FWS Angevaare Basketball
-17-Oct-18,6:00PM,6:30PM,Community Room 1,Fitness,Burlington Synchronized Swim - TW FWS 2018/19,FWS Burlington Synchronized Swim
-17-Oct-18,7:30PM,9:30PM,Community Room 5,Meeting,"Selman, Diane","Selman, Diane"
-17-Oct-18,6:30PM,7:20PM,Gym Single 2,Fitness,Interval Training 19+,
-17-Oct-18,7:00PM,10:00PM,Community Room 1,Meeting,Mansion Toastmasters FWS 2018/19,FWS Mansion Toastmasters @ RYC
-17-Oct-18,7:00PM,8:30PM,Community Room 3,Fitness Class,Ashtanga Yoga Tansley Woods FWS 2018/19,FWS Ashtanga Yoga
-17-Oct-18,7:30PM,10:30PM,Gym Double 1/2,Volleyball,BASL Tansley Woods FWS 2018/19,FWS BASL
-18-Oct-18,7:00AM,8:00AM,Gym Single 2,Basketball,Sweeney Basketball Tansley Woods FWS 2018/19,FWS Sweeney Basketball
-18-Oct-18,7:30AM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
-18-Oct-18,9:15AM,11:45AM,Community Room 5,Games and Cards,Mah Jong - Beginner 55+,
-18-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
-18-Oct-18,10:00AM,12:00PM,Community Room 2,Seminars,Advance Care Planning Information Session 19+,
-18-Oct-18,9:15AM,10:05AM,Gym Single 2,Fitness,Interval Training 19+,
-18-Oct-18,9:30AM,12:00PM,Community Room 6,Preschool,"1,2,3 Jump 3-5",
-18-Oct-18,10:30AM,11:30AM,Community Room 1,Pilates,Chair Pilates 55+,
-18-Oct-18,10:45AM,12:45PM,Gym Single 1,Active Kids,Play Fit 5 months-6 years with adult,
-18-Oct-18,12:30PM,2:30PM,Community Room 1,Art,Drawing - Introduction 55+,
-18-Oct-18,12:30PM,1:30PM,Community Room 6,Group Lessons,Guitar - Level Two 55+,
-18-Oct-18,12:15PM,1:15PM,Community Room 5,Pilates,Pilates - Beginner 55+,
-18-Oct-18,1:45PM,2:45PM,Community Room 6,Group Lessons,Guitar - Level One 55+,
-18-Oct-18,1:30PM,2:30PM,Community Room 5,Pilates,Pilates - Intermediate 55+,
-18-Oct-18,5:30PM,9:00PM,Community Room 2,Meeting,Smiths Funeral Home,Smiths Funeral Home
-18-Oct-18,5:00PM,6:00PM,Gym Single 1,Soccer Indoor,Legends Soccer Academy Tansley Woods FWS 2018/19,FWS Legends Soccer Academy
-18-Oct-18,6:00PM,8:30PM,Community Room 1,Fitness Class,Paterson's Karate Works Tansley Woods FWS 2018/19,FWS Paterson's Karate Works
-18-Oct-18,6:00PM,7:30PM,Gym Double 1/2,Volleyball,Defensa Volleyball Club Tansley Woods FWS 2018/19,FWS Defensa Volleyball Club
-18-Oct-18,7:15PM,9:30PM,Community Room 4,Meeting,First Burl Toastmasters Tansley Woods FWS 2018/19,FWS First Burl Toastmasters
-18-Oct-18,7:30PM,10:30PM,Gym Double 1/2,Volleyball,BASL Tansley Woods FWS 2018/19,FWS BASL
-19-Oct-18,7:30AM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
-19-Oct-18,8:00AM,8:50AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
-19-Oct-18,8:30AM,9:30AM,Community Room 1,Yoga,Yoga for Golf 55+,
-19-Oct-18,9:30AM,11:30AM,Community Room 5,Writing and Public Speaking,Short Story Writing Workshop 55+,
-19-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
-19-Oct-18,9:15AM,10:05AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
-19-Oct-18,10:00AM,11:00AM,Community Room 1,Yoga,Chair Yoga 55+,
-19-Oct-18,10:30AM,11:30AM,Community Room 6,Creative Kids,Do-Re-Mi 1-4 Parent and Tot,
-19-Oct-18,11:00AM,12:00PM,Gym Single 2,Zumba,Zumba Toning 19+,
-19-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Pickleball,Pickleball - 2.5-3.5 Recreational Play 19+,
-19-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Recreational Pickleball,Pickleball 55+ Level 2.5-3.5,
-19-Oct-18,3:00PM,4:30PM,Community Room 6,General Interest,Guitar 55+,
-19-Oct-18,5:00PM,9:00PM,Community Room 6,Lifeguarding,Lifesaving Society Standard First Aid with CPR C and AED,
-19-Oct-18,6:00PM,7:30PM,Community Room 1,Special Use,2018 Engineering For Kids,FWS Engineering For Kids - Halton Region
-19-Oct-18,6:30PM,8:00PM,Community Room 4,Rooms and Auditoriums - Other,Cindy Chen Art Tansley Woods FWS 2018/19,FWS Cindy Chen Art
-19-Oct-18,7:00PM,10:00PM,Community Room 5,No Socks for Ivan,No Socks For Ivan Grade 6-12,
+11-Oct-18,7:00AM,8:00AM,Gym Single 2,Basketball,Sweeney Basketball Tansley Woods FWS 2018/19,FWS Sweeney Basketball
+11-Oct-18,7:30AM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
+11-Oct-18,9:00AM,12:00PM,Community Room 2,Meeting,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
+11-Oct-18,9:15AM,11:45AM,Community Room 5,Games and Cards,Mah Jong - Beginner 55+,
+11-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
+11-Oct-18,9:15AM,10:05AM,Gym Single 2,Fitness,Interval Training 19+,
+11-Oct-18,9:30AM,12:00PM,Community Room 6,Preschool,"1,2,3 Jump 3-5",
+11-Oct-18,10:30AM,11:30AM,Community Room 1,Pilates,Chair Pilates 55+,
+11-Oct-18,10:45AM,12:45PM,Gym Single 1,Active Kids,Play Fit 5 months-6 years with adult,
+11-Oct-18,12:30PM,2:30PM,Community Room 1,Art,Drawing - Introduction 55+,
+11-Oct-18,12:30PM,1:30PM,Community Room 6,Group Lessons,Guitar - Level Two 55+,
+11-Oct-18,12:15PM,1:15PM,Community Room 5,Pilates,Pilates - Beginner 55+,
+11-Oct-18,1:45PM,2:45PM,Community Room 6,Group Lessons,Guitar - Level One 55+,
+11-Oct-18,1:30PM,2:30PM,Community Room 5,Pilates,Pilates - Intermediate 55+,
+11-Oct-18,5:00PM,9:00PM,Community Room 5,Become a Camp Leader,Behaviour Management Systems Training Re-Certification 15+,
+11-Oct-18,5:00PM,6:00PM,Gym Single 1,Soccer Indoor,Legends Soccer Academy Tansley Woods FWS 2018/19,FWS Legends Soccer Academy
+11-Oct-18,6:30PM,8:30PM,Community Room 2,Meeting,2018 HCC 273 Meeting,
+11-Oct-18,6:00PM,8:30PM,Community Room 1,Fitness Class,Paterson's Karate Works Tansley Woods FWS 2018/19,FWS Paterson's Karate Works
+11-Oct-18,6:00PM,7:30PM,Gym Double 1/2,Volleyball,Defensa Volleyball Club Tansley Woods FWS 2018/19,FWS Defensa Volleyball Club
+11-Oct-18,7:15PM,9:30PM,Community Room 4,Meeting,First Burl Toastmasters Tansley Woods FWS 2018/19,FWS First Burl Toastmasters
+11-Oct-18,7:30PM,10:30PM,Gym Double 1/2,Volleyball,BASL Tansley Woods FWS 2018/19,FWS BASL
+11-Oct-18,7:00AM,3:00PM,Community Room 2,Meeting,"Roads, Parks and Forestry COB","Roads, Parks and Forestry COB"
+11-Oct-18,7:30AM,5:30PM,Community Room 3,Rooms and Auditoriums - Other,Montessori Preschool Tansley Woods FWS 2018/19,FWS Montessori Preschool
+11-Oct-18,8:00AM,8:50AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
+11-Oct-18,8:30AM,9:30AM,Community Room 1,Yoga,Yoga for Golf 55+,
+11-Oct-18,9:30AM,11:30AM,Community Room 5,Writing and Public Speaking,Short Story Writing Workshop 55+,
+11-Oct-18,9:00AM,3:30PM,Community Room 4,Rooms and Auditoriums - Other,Community Living Burlington Tansley Woods FWS 2018/19,FWS Community Living Burlington
+11-Oct-18,9:15AM,10:05AM,Gym Single 2,Fitness,Walk/Tone/Stretch 19+,
+11-Oct-18,10:00AM,11:00AM,Community Room 1,Yoga,Chair Yoga 55+,
+11-Oct-18,10:30AM,11:30AM,Community Room 6,Creative Kids,Do-Re-Mi 1-4 Parent and Tot,
+11-Oct-18,11:00AM,12:00PM,Gym Single 2,Zumba,Zumba Toning 19+,
+11-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Pickleball,Pickleball - 2.5-3.5 Recreational Play 19+,
+11-Oct-18,12:30PM,3:30PM,Gym Double 1/2,Recreational Pickleball,Pickleball 55+ Level 2.5-3.5,
+11-Oct-18,3:00PM,4:30PM,Community Room 6,General Interest,Guitar 55+,
+11-Oct-18,6:00PM,7:30PM,Community Room 1,Special Use,2018 Engineering For Kids,FWS Engineering For Kids - Halton Region
+11-Oct-18,6:30PM,8:00PM,Community Room 4,Rooms and Auditoriums - Other,Cindy Chen Art Tansley Woods FWS 2018/19,FWS Cindy Chen Art
+11-Oct-18,7:00PM,10:00PM,Community Room 5,No Socks for Ivan,No Socks For Ivan Grade 6-12,
+11-Oct-18,7:15PM,9:15PM,Community Room 3,Meeting,SVG ,
+11-Oct-18,7:15AM,9:15AM,Gym Single 1,Basketball,Saturday Men's Basketball Tansley Woods FWS 2018/19,FWS Saturday Men's Basketball
+11-Oct-18,8:30AM,9:20AM,Gym Single 2,Fitness,Cardio Sculpt 19+,
+11-Oct-18,9:45AM,12:30PM,Gym Single 2,Gyms - Other,Sportball Tansley Woods FWS 2018/19,FWS Sportball
+11-Oct-18,10:00AM,12:30PM,Community Room 2,Meeting,Burlington Aquatic Devilrays - TW FWS 2018/19,FWS Burlington Aquatic Devilrays
+11-Oct-18,9:00AM,1:00PM,Community Room 6,Dance Class,Bella Moon Studios - Fall 2018 Saturdays,FWS Bella Moon Studios
+11-Oct-18,9:00AM,11:30AM,Community Room 3,Fitness Class,Paterson's Karate Works Tansley Woods FWS 2018/19,FWS Paterson's Karate Works
+11-Oct-18,9:30AM,12:00PM,Community Room 1,Active and Social,Dash and Splash (4-12yrs),
+11-Oct-18,12:30PM,3:30PM,Community Room 5,Swimming,Dunk & Dive 13-21,
+11-Oct-18,1:30PM,4:30PM,Community Room 4,Social,Evans Birthday ,Jordan Family
+11-Oct-18,1:30PM,4:30PM,Community Room 2,Meeting,FWS Redleaf Cultural Integration,FWS Redleaf Cultural Integration
+11-Oct-18,2:30PM,4:00PM,Community Room 1,Meeting,FWS Redleaf Cultural Integration - Haber TW 2018 2019,FWS Redleaf Cultural Integration
+11-Oct-18,4:00PM,6:00PM,Community Room 5,Meeting,"P&R Aquatics, New Staff Check-In",Parks & Recreation Aquatics COB
