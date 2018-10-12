@@ -585,7 +585,7 @@ var CobtansleybackComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
+module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
 
 /***/ }),
 
@@ -596,7 +596,7 @@ module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"/assets/tansley.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td [style.font-size]=\"tableStyle\" class=\"account_or_subject_column\"><span>{{item.AccountName|shorten:20 }}</span></td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
+module.exports = "<img src=\"/assets/tansley.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"account_or_subject_column\"><span>{{item.AccountName|shorten:20 }}</span></td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
 
 /***/ }),
 
@@ -651,17 +651,24 @@ var CobtansleyfrntComponent = /** @class */ (function () {
             for (var i = 0; i < data.length; i++) {
                 var today = new Date();
                 var today_milliseconds = today.getTime();
-                var Event_Day_Start = new Date(data[i].Date);
-                var Event_Day_Start_milliseconds = Event_Day_Start.getTime();
+                // let Event_Day_Start = new Date(data[i].Date)
+                var Event_Day_Start_milliseconds = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].Date, 'D-MMM-YY').valueOf();
+                // console.log(Event_Day_Start_milliseconds)
+                //  let Event_Day_Start_milliseconds = Event_Day_Start.getTime();
                 var Event_Day_End_milliseconds = Event_Day_Start_milliseconds + 86400000;
                 var StartTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].StartTime, 'h:mmA');
                 var EndTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].EndTime, 'h:mmA');
+                // console.log(today_milliseconds)
+                // console.log(Event_Day_Start_milliseconds)
+                // console.log(today_milliseconds)
+                // console.log(Event_Day_End_milliseconds)
                 if (today_milliseconds > Event_Day_Start_milliseconds && today_milliseconds < Event_Day_End_milliseconds) {
                     if (today.getTime() >= StartTime_moment.valueOf() - 7200000 && today.getTime() < EndTime_moment.valueOf() + 1800000) {
                         _this.csvgetdata.push(data[i]);
                     }
                 }
             }
+            //console.log(this.csvgetdata.length);
             var fontChange = false;
             for (var i = _this.event_counter; i < _this.csvgetdata.length; i++) {
                 _this.csvdatatobedisplayed.push(_this.csvgetdata[i]);
@@ -675,13 +682,11 @@ var CobtansleyfrntComponent = /** @class */ (function () {
                     _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
                 }
                 if (_this.csvdatatobedisplayed[i].AccountName.length > 40) {
-                    console.log("font ");
                     _this.tableStyle = "0.7em";
                     fontChange = true;
                 }
             }
             if (!fontChange) {
-                console.log();
                 _this.tableStyle = "1em";
             }
             _this.event_counter = _this.event_counter + 8;
