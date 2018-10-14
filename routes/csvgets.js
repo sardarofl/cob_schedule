@@ -2,9 +2,15 @@ var express = require('express');
 var router = express.Router();
 var CSV_CONVERTERS=require('../models/csvgets');
 
-router.get('/csvgets',function(req,res,next){
+router.get('/csvtansley',function(req,res,next){
 
-res.json(CSV_CONVERTERS.getAllTasks());
+res.json(CSV_CONVERTERS.getCSVTansley());
+
+});
+
+router.get('/csvhaber',function(req,res,next){
+
+res.json(CSV_CONVERTERS.getCSVHaber());
 
 });
 

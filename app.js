@@ -103,11 +103,19 @@ app.get('/bemain/cobtansleyback', (req,res) =>{
   res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
 });
 
+app.get('/bemain/cobhaberback', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
+});
+
 app.get('/bemain/login', (req,res) =>{
   res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
 });
 
 app.get('/cobtansleyfront', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
+});
+
+app.get('/cobhaberfront', (req,res) =>{
   res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
 });
 

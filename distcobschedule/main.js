@@ -390,6 +390,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
 /* harmony import */ var _components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/guards/auth.guard */ "./src/app/components/guards/auth.guard.ts");
 /* harmony import */ var _shorten_pipe__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./shorten.pipe */ "./src/app/shorten.pipe.ts");
+/* harmony import */ var _components_cobhaberfrnt_cobhaberfrnt_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/cobhaberfrnt/cobhaberfrnt.component */ "./src/app/components/cobhaberfrnt/cobhaberfrnt.component.ts");
+/* harmony import */ var _components_cobhaberback_cobhaberback_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/cobhaberback/cobhaberback.component */ "./src/app/components/cobhaberback/cobhaberback.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -415,16 +417,20 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var appRoutes = [
     //, canActivate:[AuthGuard]
     { path: 'bemain', component: _components_mainback_mainback_component__WEBPACK_IMPORTED_MODULE_6__["MainbackComponent"],
         children: [
             { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"] },
             { path: 'cobtansleyback', component: _components_cobtansleyback_cobtansleyback_component__WEBPACK_IMPORTED_MODULE_5__["CobtansleybackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
+            { path: 'cobhaberback', component: _components_cobhaberback_cobhaberback_component__WEBPACK_IMPORTED_MODULE_20__["CobhaberbackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
             { path: '**', redirectTo: 'login' }
         ]
     },
     { path: 'cobtansleyfront', component: _components_cobtansleyfrnt_cobtansleyfrnt_component__WEBPACK_IMPORTED_MODULE_4__["CobtansleyfrntComponent"] },
+    { path: 'cobhaberfront', component: _components_cobhaberfrnt_cobhaberfrnt_component__WEBPACK_IMPORTED_MODULE_19__["CobhaberfrntComponent"] },
     { path: '**', redirectTo: 'bemain' }
 ];
 // const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
@@ -446,7 +452,9 @@ var AppModule = /** @class */ (function () {
                 _components_cobtansleyback_cobtansleyback_component__WEBPACK_IMPORTED_MODULE_5__["CobtansleybackComponent"],
                 _components_mainback_mainback_component__WEBPACK_IMPORTED_MODULE_6__["MainbackComponent"],
                 _components_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"],
-                _shorten_pipe__WEBPACK_IMPORTED_MODULE_18__["ShortenPipe"]
+                _shorten_pipe__WEBPACK_IMPORTED_MODULE_18__["ShortenPipe"],
+                _components_cobhaberfrnt_cobhaberfrnt_component__WEBPACK_IMPORTED_MODULE_19__["CobhaberfrntComponent"],
+                _components_cobhaberback_cobhaberback_component__WEBPACK_IMPORTED_MODULE_20__["CobhaberbackComponent"]
             ],
             imports: [
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes),
@@ -472,6 +480,244 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/cobhaberback/cobhaberback.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/cobhaberback/cobhaberback.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n.custom-file-upload {\r\n    border: 2px solid  #1A237E;\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    cursor: pointer;\r\n    color:black;\r\n    line-height: 50px;\r\n    font-size: 2.0em;\r\n}\r\ninput[type=\"file\"] {\r\n    display: none;\r\n}\r\n.full-width {\r\n  width: 100vw;\r\n  position: relative;\r\n  left: 50%;\r\n  right: 50%;\r\n  margin-left: -50vw;\r\n  margin-right: -50vw;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/cobhaberback/cobhaberback.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/cobhaberback/cobhaberback.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Haber CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n    </div>\n\n\n    \n"
+
+/***/ }),
+
+/***/ "./src/app/components/cobhaberback/cobhaberback.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/cobhaberback/cobhaberback.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: CobhaberbackComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobhaberbackComponent", function() { return CobhaberbackComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/adddata.service */ "./src/app/services/adddata.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/authentication.service */ "./src/app/services/authentication.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CobhaberbackComponent = /** @class */ (function () {
+    function CobhaberbackComponent(snackBar, elem, adddataService, authService) {
+        this.snackBar = snackBar;
+        this.elem = elem;
+        this.adddataService = adddataService;
+        this.authService = authService;
+    }
+    CobhaberbackComponent.prototype.openSnackBar = function () {
+    };
+    CobhaberbackComponent.prototype.ngOnInit = function () {
+    };
+    CobhaberbackComponent.prototype.onUploadSuccess = function (event) {
+        console.log(event);
+    };
+    CobhaberbackComponent.prototype.onUploadError = function (event) {
+        console.log(event);
+    };
+    CobhaberbackComponent.prototype.addCSV = function () {
+        var _this = this;
+        var files = this.elem.nativeElement.querySelector('#image').files;
+        var formData = new FormData();
+        //console.log(files[0]);
+        formData.append('bodydummy', "dummy");
+        formData.append('image', files[0], files[0].name);
+        var json_arr = JSON.stringify(formData);
+        //console.log(formData);
+        this.adddataService.Haber_sendCSV(formData).subscribe(function (res) {
+            _this.snackBar.open('Schedule Uploaded', 'OK', {
+                duration: 3000
+            });
+        });
+        // for(let i =0; i < files.length; i++){
+        //       formData.append('image',files[i],files[i].name);
+        //       console.log("appended "+files[i].name);
+        // }
+        // var json_arr = JSON.stringify(formData);
+        // console.log("JSON: "+json_arr);
+        //   this.adddataService.addGallery(formData).subscribe
+        //   (res =>{ alert("Images are uploaded to Gallery." );
+        // }
+        //  );
+    };
+    CobhaberbackComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cobhaberback',
+            template: __webpack_require__(/*! ./cobhaberback.component.html */ "./src/app/components/cobhaberback/cobhaberback.component.html"),
+            styles: [__webpack_require__(/*! ./cobhaberback.component.css */ "./src/app/components/cobhaberback/cobhaberback.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__["AdddataService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]])
+    ], CobhaberbackComponent);
+    return CobhaberbackComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/cobhaberfrnt/cobhaberfrnt.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/cobhaberfrnt/cobhaberfrnt.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/cobhaberfrnt/cobhaberfrnt.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/cobhaberfrnt/cobhaberfrnt.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<img src=\"/assets/tansley.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"account_or_subject_column\"><span>{{item.AccountName|shorten:20 }}</span></td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/cobhaberfrnt/cobhaberfrnt.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/cobhaberfrnt/cobhaberfrnt.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: CobhaberfrntComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobhaberfrntComponent", function() { return CobhaberfrntComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_getdata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/getdata.service */ "./src/app/services/getdata.service.ts");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/moment/moment.js */ "./node_modules/moment/moment.js");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CobhaberfrntComponent = /** @class */ (function () {
+    function CobhaberfrntComponent(getDataService) {
+        var _this = this;
+        this.getDataService = getDataService;
+        this.csvgetdata = [];
+        this.csvdatatobedisplayed = [];
+        this.tableStyle = '1em';
+        setInterval(function () {
+            _this.refreshData();
+        }, 10000);
+    }
+    CobhaberfrntComponent.prototype.ngOnInit = function () {
+        // console.log("data")
+        this.event_counter = 0;
+        this.refreshData();
+    };
+    CobhaberfrntComponent.prototype.refreshData = function () {
+        var _this = this;
+        this.getDataService.getCSVData("/csvgets/csvhaber").map(function (response) { return response.json(); }).subscribe(function (data) {
+            _this.csvgetdata = [];
+            _this.csvdatatobedisplayed = [];
+            //console.log(data);
+            for (var i = 0; i < data.length; i++) {
+                var today = new Date();
+                var today_milliseconds = today.getTime();
+                // let Event_Day_Start = new Date(data[i].Date)
+                var Event_Day_Start_milliseconds = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].Date, 'D-MMM-YY').valueOf();
+                // console.log(Event_Day_Start_milliseconds)
+                //  let Event_Day_Start_milliseconds = Event_Day_Start.getTime();
+                var Event_Day_End_milliseconds = Event_Day_Start_milliseconds + 86400000;
+                var StartTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].StartTime, 'h:mmA');
+                var EndTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].EndTime, 'h:mmA');
+                // console.log(today_milliseconds)
+                // console.log(Event_Day_Start_milliseconds)
+                // console.log(today_milliseconds)
+                // console.log(Event_Day_End_milliseconds)
+                if (today_milliseconds > Event_Day_Start_milliseconds && today_milliseconds < Event_Day_End_milliseconds) {
+                    if (today.getTime() >= StartTime_moment.valueOf() - 7200000 && today.getTime() < EndTime_moment.valueOf() + 1800000) {
+                        _this.csvgetdata.push(data[i]);
+                    }
+                }
+            }
+            //console.log(this.csvgetdata.length);
+            var fontChange = false;
+            for (var i = _this.event_counter; i < _this.csvgetdata.length; i++) {
+                _this.csvdatatobedisplayed.push(_this.csvgetdata[i]);
+                //console.log(this.csvdatatobedisplayed[i])
+            }
+            for (var i = 0; i < _this.csvdatatobedisplayed.length; i++) {
+                if (_this.csvdatatobedisplayed[i].AccountName == '') {
+                    _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
+                }
+                if (_this.csvdatatobedisplayed[i].Service == 'Meeting' || _this.csvdatatobedisplayed[i].Service == 'Social') {
+                    _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
+                }
+                if (_this.csvdatatobedisplayed[i].AccountName.length > 40) {
+                    _this.tableStyle = "0.7em";
+                    fontChange = true;
+                }
+            }
+            if (!fontChange) {
+                _this.tableStyle = "1em";
+            }
+            _this.event_counter = _this.event_counter + 8;
+            if (_this.event_counter >= _this.csvgetdata.length) {
+                _this.event_counter = 0;
+            }
+        });
+    };
+    CobhaberfrntComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cobhaberfrnt',
+            template: __webpack_require__(/*! ./cobhaberfrnt.component.html */ "./src/app/components/cobhaberfrnt/cobhaberfrnt.component.html"),
+            styles: [__webpack_require__(/*! ./cobhaberfrnt.component.css */ "./src/app/components/cobhaberfrnt/cobhaberfrnt.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_getdata_service__WEBPACK_IMPORTED_MODULE_1__["GetdataService"]])
+    ], CobhaberfrntComponent);
+    return CobhaberfrntComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/cobtansleyback/cobtansleyback.component.css":
 /*!************************************************************************!*\
   !*** ./src/app/components/cobtansleyback/cobtansleyback.component.css ***!
@@ -490,7 +736,7 @@ module.exports = "\r\n.custom-file-upload {\r\n    border: 2px solid  #1A237E;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Tansley CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n    </div>\n\n\n    \n"
+module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n  <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n    <label class=\"custom-file-upload\"> Click to add COB Tansley CSV file\n    <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n  </label>\n  <br><br>\n  </form>\n</div>\n\n\n    \n"
 
 /***/ }),
 
@@ -547,7 +793,7 @@ var CobtansleybackComponent = /** @class */ (function () {
         formData.append('image', files[0], files[0].name);
         var json_arr = JSON.stringify(formData);
         //console.log(formData);
-        this.adddataService.sendCSV(formData).subscribe(function (res) {
+        this.adddataService.Tansley_sendCSV(formData).subscribe(function (res) {
             _this.snackBar.open('Schedule Uploaded', 'OK', {
                 duration: 3000
             });
@@ -644,7 +890,7 @@ var CobtansleyfrntComponent = /** @class */ (function () {
     };
     CobtansleyfrntComponent.prototype.refreshData = function () {
         var _this = this;
-        this.getDataService.getTansleyCSVData("/csvgets/csvgets").map(function (response) { return response.json(); }).subscribe(function (data) {
+        this.getDataService.getCSVData("/csvgets/csvtansley").map(function (response) { return response.json(); }).subscribe(function (data) {
             _this.csvgetdata = [];
             _this.csvdatatobedisplayed = [];
             //console.log(data);
@@ -846,13 +1092,12 @@ var LoginComponent = /** @class */ (function () {
             if (data.success) {
                 _this.authService.storeUserData(data.token, data.user);
                 //    this.flashMessage.show('you are now logged in',{cssClass:'alert-success', timeout:5000});
-                // if(user.username == 'admin@my-media.tv')
-                // {
-                //   this.router.navigate(['admin/accounts']);
-                // }else{
-                //   this.router.navigate(['/bemain/cobtansleyback']);
-                // }
-                _this.router.navigate(['/bemain/cobtansleyback']);
+                if (data.user.account_ID == 'cobtansley') {
+                    _this.router.navigate(['/bemain/cobtansleyback']);
+                }
+                else if (data.user.account_ID == 'cobhaber') {
+                    _this.router.navigate(['/bemain/cobhaberback']);
+                }
                 //  location.reload();
             }
             else {
@@ -1004,8 +1249,13 @@ var AdddataService = /** @class */ (function () {
     function AdddataService(http) {
         this.http = http;
     }
-    AdddataService.prototype.sendCSV = function (formdata) {
-        var _url = "/additems/csvupload";
+    AdddataService.prototype.Tansley_sendCSV = function (formdata) {
+        var _url = "/additems/tansley_csv_upload";
+        return this.http.post(_url, formdata)
+            .catch(this._errorHandler);
+    };
+    AdddataService.prototype.Haber_sendCSV = function (formdata) {
+        var _url = "/additems/haber_csv_upload";
         return this.http.post(_url, formdata)
             .catch(this._errorHandler);
     };
@@ -1156,7 +1406,7 @@ var GetdataService = /** @class */ (function () {
     function GetdataService(http) {
         this.http = http;
     }
-    GetdataService.prototype.getTansleyCSVData = function (url) {
+    GetdataService.prototype.getCSVData = function (url) {
         return this.http.get(url);
     };
     GetdataService = __decorate([
