@@ -593,7 +593,7 @@ var CobhaberbackComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
+module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n    max-width: 290px;\r\n    min-width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n    max-width:398px;\r\n    min-width:398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n    max-width:669px;\r\n    min-width:669px;\r\n}\r\n\r\n.my_nowrap {\r\n    white-space: nowrap;\r\n}"
 
 /***/ }),
 
@@ -604,7 +604,7 @@ module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"/assets/tansley.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"account_or_subject_column\"><span>{{item.AccountName|shorten:20 }}</span></td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
+module.exports = "<img src=\"/assets/tansley.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"account_or_subject_column my_nowrap\">{{item.AccountName|shorten:20 }}</td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
 
 /***/ }),
 
@@ -700,6 +700,10 @@ var CobhaberfrntComponent = /** @class */ (function () {
             _this.event_counter = _this.event_counter + 8;
             if (_this.event_counter >= _this.csvgetdata.length) {
                 _this.event_counter = 0;
+            }
+            else {
+                // $(".table_style").fadeOut();
+                // $(".table_style").fadeIn();
             }
         });
     };
@@ -831,7 +835,7 @@ var CobtansleybackComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n}"
+module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 290px;\r\n    max-width: 290px;\r\n    min-width: 290px;\r\n}\r\n\r\n.facility_column{\r\n\r\n    width: 398px;\r\n    max-width:398px;\r\n    min-width:398px;\r\n}\r\n\r\n.account_or_subject_column{\r\n\r\n\r\n    width: 669px;\r\n    max-width:669px;\r\n    min-width:669px;\r\n}\r\n\r\n.my_nowrap {\r\n    white-space: nowrap;\r\n}"
 
 /***/ }),
 
@@ -842,7 +846,7 @@ module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"/assets/tansley.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"account_or_subject_column\"><span>{{item.AccountName|shorten:20 }}</span></td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
+module.exports = "<img src=\"/assets/tansley.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"account_or_subject_column my_nowrap\">{{item.AccountName|shorten:20 }}</td>\n    <td class=\"facility_column center\">{{item.Facility  }}</td>\n  </tr>\n</table>\n"
 
 /***/ }),
 
@@ -1140,7 +1144,7 @@ module.exports = ".toolbar_spacer {\r\n    flex: 1 1 auto;\r\n  }"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\r\n    <mat-toolbar-row>\r\n        <span>{{this.cobname}}</span>\r\n        <span class=\"toolbar_spacer\"></span>\r\n        <!-- <button mat-button [routerLink]=\"['/bemenu/login']\" *ngIf=\"!isLoggednIn\">login</button> -->\r\n        <!-- <button mat-button>logout</button>  -->\r\n        <button mat-button (click)=\"onLogout()\" *ngIf=\"authenticationService.loggedIn()\">logout</button>\r\n    </mat-toolbar-row>\r\n\r\n</mat-toolbar>\r\n<br>\r\n<div class=\"container\"><router-outlet ></router-outlet></div>"
+module.exports = "<mat-toolbar color=\"primary\">\r\n    <mat-toolbar-row>\r\n        <span>{{this.cobname}}</span>\r\n        <span class=\"toolbar_spacer\"></span>\r\n        <!-- <button mat-button [routerLink]=\"['/bemenu/login']\" *ngIf=\"!isLoggednIn\">login</button> -->\r\n        <!-- <button mat-button>logout</button>  -->\r\n        <button mat-button (click)=\"onLogout()\" *ngIf=\"authenticationService.loggedIn()\">logout</button>\r\n    </mat-toolbar-row>\r\n\r\n</mat-toolbar>\r\n<br>\r\n<div class=\"container\"><router-outlet></router-outlet></div>"
 
 /***/ }),
 
