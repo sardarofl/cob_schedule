@@ -392,12 +392,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shorten_pipe__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./shorten.pipe */ "./src/app/shorten.pipe.ts");
 /* harmony import */ var _components_cobhaberfrnt_cobhaberfrnt_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/cobhaberfrnt/cobhaberfrnt.component */ "./src/app/components/cobhaberfrnt/cobhaberfrnt.component.ts");
 /* harmony import */ var _components_cobhaberback_cobhaberback_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/cobhaberback/cobhaberback.component */ "./src/app/components/cobhaberback/cobhaberback.component.ts");
+/* harmony import */ var _components_cobapplebyfrnt_cobapplebyfrnt_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/cobapplebyfrnt/cobapplebyfrnt.component */ "./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.ts");
+/* harmony import */ var _components_cobapplebyback_cobapplebyback_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/cobapplebyback/cobapplebyback.component */ "./src/app/components/cobapplebyback/cobapplebyback.component.ts");
+/* harmony import */ var _components_cobmountainsideback_cobmountainsideback_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/cobmountainsideback/cobmountainsideback.component */ "./src/app/components/cobmountainsideback/cobmountainsideback.component.ts");
+/* harmony import */ var _components_cobmountainsidefrnt_cobmountainsidefrnt_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/cobmountainsidefrnt/cobmountainsidefrnt.component */ "./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -426,11 +434,15 @@ var appRoutes = [
             { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"] },
             { path: 'cobtansleyback', component: _components_cobtansleyback_cobtansleyback_component__WEBPACK_IMPORTED_MODULE_5__["CobtansleybackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
             { path: 'cobhaberback', component: _components_cobhaberback_cobhaberback_component__WEBPACK_IMPORTED_MODULE_20__["CobhaberbackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
+            { path: 'cobapplebyback', component: _components_cobapplebyback_cobapplebyback_component__WEBPACK_IMPORTED_MODULE_22__["CobapplebybackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
+            { path: 'cobmountainsideback', component: _components_cobmountainsideback_cobmountainsideback_component__WEBPACK_IMPORTED_MODULE_23__["CobmountainsidebackComponent"], canActivate: [_components_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
             { path: '**', redirectTo: 'login' }
         ]
     },
     { path: 'cobtansleyfront', component: _components_cobtansleyfrnt_cobtansleyfrnt_component__WEBPACK_IMPORTED_MODULE_4__["CobtansleyfrntComponent"] },
     { path: 'cobhaberfront', component: _components_cobhaberfrnt_cobhaberfrnt_component__WEBPACK_IMPORTED_MODULE_19__["CobhaberfrntComponent"] },
+    { path: 'cobapplebyfront', component: _components_cobapplebyfrnt_cobapplebyfrnt_component__WEBPACK_IMPORTED_MODULE_21__["CobapplebyfrntComponent"] },
+    { path: 'cobmountainsidefront', component: _components_cobmountainsidefrnt_cobmountainsidefrnt_component__WEBPACK_IMPORTED_MODULE_24__["CobmountainsidefrntComponent"] },
     { path: '**', redirectTo: 'bemain' }
 ];
 // const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
@@ -454,7 +466,11 @@ var AppModule = /** @class */ (function () {
                 _components_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"],
                 _shorten_pipe__WEBPACK_IMPORTED_MODULE_18__["ShortenPipe"],
                 _components_cobhaberfrnt_cobhaberfrnt_component__WEBPACK_IMPORTED_MODULE_19__["CobhaberfrntComponent"],
-                _components_cobhaberback_cobhaberback_component__WEBPACK_IMPORTED_MODULE_20__["CobhaberbackComponent"]
+                _components_cobhaberback_cobhaberback_component__WEBPACK_IMPORTED_MODULE_20__["CobhaberbackComponent"],
+                _components_cobapplebyfrnt_cobapplebyfrnt_component__WEBPACK_IMPORTED_MODULE_21__["CobapplebyfrntComponent"],
+                _components_cobapplebyback_cobapplebyback_component__WEBPACK_IMPORTED_MODULE_22__["CobapplebybackComponent"],
+                _components_cobmountainsideback_cobmountainsideback_component__WEBPACK_IMPORTED_MODULE_23__["CobmountainsidebackComponent"],
+                _components_cobmountainsidefrnt_cobmountainsidefrnt_component__WEBPACK_IMPORTED_MODULE_24__["CobmountainsidefrntComponent"]
             ],
             imports: [
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes),
@@ -474,6 +490,246 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/cobapplebyback/cobapplebyback.component.css":
+/*!************************************************************************!*\
+  !*** ./src/app/components/cobapplebyback/cobapplebyback.component.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n.custom-file-upload {\r\n    border: 2px solid  #1A237E;\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    cursor: pointer;\r\n    color:black;\r\n    line-height: 50px;\r\n    font-size: 2.0em;\r\n}\r\ninput[type=\"file\"] {\r\n    display: none;\r\n}\r\n.full-width {\r\n  width: 100vw;\r\n  position: relative;\r\n  left: 50%;\r\n  right: 50%;\r\n  margin-left: -50vw;\r\n  margin-right: -50vw;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/cobapplebyback/cobapplebyback.component.html":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/cobapplebyback/cobapplebyback.component.html ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Appleby CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n    </div>\n\n\n    \n"
+
+/***/ }),
+
+/***/ "./src/app/components/cobapplebyback/cobapplebyback.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/cobapplebyback/cobapplebyback.component.ts ***!
+  \***********************************************************************/
+/*! exports provided: CobapplebybackComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobapplebybackComponent", function() { return CobapplebybackComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/adddata.service */ "./src/app/services/adddata.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/authentication.service */ "./src/app/services/authentication.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CobapplebybackComponent = /** @class */ (function () {
+    function CobapplebybackComponent(snackBar, elem, adddataService, authService) {
+        this.snackBar = snackBar;
+        this.elem = elem;
+        this.adddataService = adddataService;
+        this.authService = authService;
+    }
+    CobapplebybackComponent.prototype.openSnackBar = function () {
+    };
+    CobapplebybackComponent.prototype.ngOnInit = function () {
+    };
+    CobapplebybackComponent.prototype.onUploadSuccess = function (event) {
+        console.log(event);
+    };
+    CobapplebybackComponent.prototype.onUploadError = function (event) {
+        console.log(event);
+    };
+    CobapplebybackComponent.prototype.addCSV = function () {
+        var _this = this;
+        var files = this.elem.nativeElement.querySelector('#image').files;
+        var formData = new FormData();
+        //console.log(files[0]);
+        formData.append('bodydummy', "dummy");
+        formData.append('image', files[0], files[0].name);
+        var json_arr = JSON.stringify(formData);
+        //console.log(formData);
+        this.adddataService.Appleby_sendCSV(formData).subscribe(function (res) {
+            _this.snackBar.open('Schedule Uploaded', 'OK', {
+                duration: 3000
+            });
+        });
+        // for(let i =0; i < files.length; i++){
+        //       formData.append('image',files[i],files[i].name);
+        //       console.log("appended "+files[i].name);
+        // }
+        // var json_arr = JSON.stringify(formData);
+        // console.log("JSON: "+json_arr);
+        //   this.adddataService.addGallery(formData).subscribe
+        //   (res =>{ alert("Images are uploaded to Gallery." );
+        // }
+        //  );
+    };
+    CobapplebybackComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cobapplebyback',
+            template: __webpack_require__(/*! ./cobapplebyback.component.html */ "./src/app/components/cobapplebyback/cobapplebyback.component.html"),
+            styles: [__webpack_require__(/*! ./cobapplebyback.component.css */ "./src/app/components/cobapplebyback/cobapplebyback.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__["AdddataService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]])
+    ], CobapplebybackComponent);
+    return CobapplebybackComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.css":
+/*!************************************************************************!*\
+  !*** ./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 383px;\r\n    max-width: 383px;\r\n    min-width: 383px;\r\n    font-size: 0.85em;\r\n}\r\n\r\n.location{\r\n\r\n    width: 249px;\r\n    max-width:249px;\r\n    min-width:249px;\r\n    font-size: 0.9em;\r\n}\r\n\r\n.team_event{\r\n\r\n\r\n    width: 545px;\r\n    max-width:545px;\r\n    min-width:545px;\r\n    font-size: 0.7em;\r\n}\r\n\r\n.room_a{\r\n\r\n\r\n    width: 138px;\r\n    max-width:138px;\r\n    min-width:138px;\r\n}\r\n\r\n.team{\r\n\r\n\r\n    width: 447px;\r\n    max-width:447px;\r\n    min-width:447px;\r\n    font-size: 1.2em;\r\n}\r\n\r\n.room_b{\r\n\r\n\r\n    width: 156px;\r\n    max-width:156px;\r\n    min-width:156px;\r\n}\r\n\r\n.my_nowrap {\r\n    white-space: nowrap;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.html":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.html ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<img src=\"/assets/cobappleby.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column my_nowrap center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"location my_nowrap center\">{{item.Facility|shorten:20 }}</td>\n    <td  class=\"team_event my_nowrap\">&nbsp;{{item.AccountName|shorten:20 }}</td>\n    <td  class=\"room_a my_nowrap center\">{{item.room_a|shorten:20 }}</td>\n    <td  class=\"team my_nowrap center\">{{item.team|shorten:20 }}</td>\n    <td  class=\"room_b my_nowrap center\">{{item.room_b|shorten:20 }}</td>\n  </tr>\n</table>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.ts ***!
+  \***********************************************************************/
+/*! exports provided: CobapplebyfrntComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobapplebyfrntComponent", function() { return CobapplebyfrntComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_getdata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/getdata.service */ "./src/app/services/getdata.service.ts");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/moment/moment.js */ "./node_modules/moment/moment.js");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CobapplebyfrntComponent = /** @class */ (function () {
+    function CobapplebyfrntComponent(getDataService) {
+        var _this = this;
+        this.getDataService = getDataService;
+        this.csvgetdata = [];
+        this.csvdatatobedisplayed = [];
+        this.tableStyle = '0.7em';
+        setInterval(function () {
+            _this.refreshData();
+        }, 10000);
+    }
+    CobapplebyfrntComponent.prototype.ngOnInit = function () {
+        // console.log("data")
+        this.event_counter = 0;
+        this.refreshData();
+    };
+    CobapplebyfrntComponent.prototype.refreshData = function () {
+        var _this = this;
+        this.getDataService.getCSVData("/csvgets/csvappleby").map(function (response) { return response.json(); }).subscribe(function (data) {
+            _this.csvgetdata = [];
+            _this.csvdatatobedisplayed = [];
+            // console.log(data);
+            for (var i = 0; i < data.length; i++) {
+                var today = new Date();
+                var today_milliseconds = today.getTime();
+                var Event_Day_Start_milliseconds = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].Date, 'D-MMM-YY').valueOf();
+                var Event_Day_End_milliseconds = Event_Day_Start_milliseconds + 86400000;
+                var StartTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].StartTime, 'h:mmA');
+                var EndTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].EndTime, 'h:mmA');
+                if (today_milliseconds > Event_Day_Start_milliseconds && today_milliseconds < Event_Day_End_milliseconds) {
+                    if (today.getTime() >= StartTime_moment.valueOf() - 7200000 && today.getTime() < EndTime_moment.valueOf() + 1800000) {
+                        console.log("Inserting Data");
+                        _this.csvgetdata.push(data[i]);
+                    }
+                }
+            }
+            var fontChange = false;
+            for (var i = _this.event_counter; i < _this.csvgetdata.length; i++) {
+                _this.csvdatatobedisplayed.push(_this.csvgetdata[i]);
+            }
+            for (var i = 0; i < _this.csvdatatobedisplayed.length; i++) {
+                if (_this.csvdatatobedisplayed[i].Facility == 'Community Room 1') {
+                    _this.csvdatatobedisplayed[i].Facility = "Comm Rm 1";
+                }
+                if (_this.csvdatatobedisplayed[i].Facility == 'Community Room 2') {
+                    _this.csvdatatobedisplayed[i].Facility = "Comm Rm 2";
+                }
+                if (_this.csvdatatobedisplayed[i].AccountName == '') {
+                    _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
+                }
+                if (_this.csvdatatobedisplayed[i].Service == 'Meeting' || _this.csvdatatobedisplayed[i].Service == 'Social') {
+                    _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
+                }
+                if (_this.csvdatatobedisplayed[i].AccountName.length > 60) {
+                    _this.tableStyle = "0.5em";
+                    fontChange = true;
+                }
+            }
+            if (!fontChange) {
+                _this.tableStyle = "0.7em";
+            }
+            _this.event_counter = _this.event_counter + 8;
+            if (_this.event_counter >= _this.csvgetdata.length) {
+                _this.event_counter = 0;
+            }
+            else {
+                // $(".table_style").fadeOut();
+                // $(".table_style").fadeIn();
+            }
+        });
+    };
+    CobapplebyfrntComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cobapplebyfrnt',
+            template: __webpack_require__(/*! ./cobapplebyfrnt.component.html */ "./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.html"),
+            styles: [__webpack_require__(/*! ./cobapplebyfrnt.component.css */ "./src/app/components/cobapplebyfrnt/cobapplebyfrnt.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_getdata_service__WEBPACK_IMPORTED_MODULE_1__["GetdataService"]])
+    ], CobapplebyfrntComponent);
+    return CobapplebyfrntComponent;
 }());
 
 
@@ -716,6 +972,246 @@ var CobhaberfrntComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_services_getdata_service__WEBPACK_IMPORTED_MODULE_1__["GetdataService"]])
     ], CobhaberfrntComponent);
     return CobhaberfrntComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/cobmountainsideback/cobmountainsideback.component.css":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/cobmountainsideback/cobmountainsideback.component.css ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n.custom-file-upload {\r\n    border: 2px solid  #1A237E;\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    cursor: pointer;\r\n    color:black;\r\n    line-height: 50px;\r\n    font-size: 2.0em;\r\n}\r\ninput[type=\"file\"] {\r\n    display: none;\r\n}\r\n.full-width {\r\n  width: 100vw;\r\n  position: relative;\r\n  left: 50%;\r\n  right: 50%;\r\n  margin-left: -50vw;\r\n  margin-right: -50vw;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/cobmountainsideback/cobmountainsideback.component.html":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/cobmountainsideback/cobmountainsideback.component.html ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Mountainside CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n    </div>\n\n\n    "
+
+/***/ }),
+
+/***/ "./src/app/components/cobmountainsideback/cobmountainsideback.component.ts":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/cobmountainsideback/cobmountainsideback.component.ts ***!
+  \*********************************************************************************/
+/*! exports provided: CobmountainsidebackComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobmountainsidebackComponent", function() { return CobmountainsidebackComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/adddata.service */ "./src/app/services/adddata.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/authentication.service */ "./src/app/services/authentication.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CobmountainsidebackComponent = /** @class */ (function () {
+    function CobmountainsidebackComponent(snackBar, elem, adddataService, authService) {
+        this.snackBar = snackBar;
+        this.elem = elem;
+        this.adddataService = adddataService;
+        this.authService = authService;
+    }
+    CobmountainsidebackComponent.prototype.openSnackBar = function () {
+    };
+    CobmountainsidebackComponent.prototype.ngOnInit = function () {
+    };
+    CobmountainsidebackComponent.prototype.onUploadSuccess = function (event) {
+        console.log(event);
+    };
+    CobmountainsidebackComponent.prototype.onUploadError = function (event) {
+        console.log(event);
+    };
+    CobmountainsidebackComponent.prototype.addCSV = function () {
+        var _this = this;
+        var files = this.elem.nativeElement.querySelector('#image').files;
+        var formData = new FormData();
+        //console.log(files[0]);
+        formData.append('bodydummy', "dummy");
+        formData.append('image', files[0], files[0].name);
+        var json_arr = JSON.stringify(formData);
+        //console.log(formData);
+        this.adddataService.MountainSide_sendCSV(formData).subscribe(function (res) {
+            _this.snackBar.open('Schedule Uploaded', 'OK', {
+                duration: 3000
+            });
+        });
+        // for(let i =0; i < files.length; i++){
+        //       formData.append('image',files[i],files[i].name);
+        //       console.log("appended "+files[i].name);
+        // }
+        // var json_arr = JSON.stringify(formData);
+        // console.log("JSON: "+json_arr);
+        //   this.adddataService.addGallery(formData).subscribe
+        //   (res =>{ alert("Images are uploaded to Gallery." );
+        // }
+        //  );
+    };
+    CobmountainsidebackComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cobmountainsideback',
+            template: __webpack_require__(/*! ./cobmountainsideback.component.html */ "./src/app/components/cobmountainsideback/cobmountainsideback.component.html"),
+            styles: [__webpack_require__(/*! ./cobmountainsideback.component.css */ "./src/app/components/cobmountainsideback/cobmountainsideback.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _services_adddata_service__WEBPACK_IMPORTED_MODULE_1__["AdddataService"], _services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]])
+    ], CobmountainsidebackComponent);
+    return CobmountainsidebackComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.css":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.css ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table{\r\n    position: fixed;\r\n    z-index: 10;\r\n    font-size: 3em;\r\n    color: white;\r\n    margin-top: 117px;\r\n    line-height: 74px;\r\n    text-align: center;\r\n    width:1920px;\r\n  \r\n}\r\n\r\n.time_column{\r\n\r\n    width: 383px;\r\n    max-width: 383px;\r\n    min-width: 383px;\r\n    font-size: 0.85em;\r\n}\r\n\r\n.location{\r\n\r\n    width: 249px;\r\n    max-width:249px;\r\n    min-width:249px;\r\n    font-size: 0.9em;\r\n}\r\n\r\n.team_event{\r\n\r\n\r\n    width: 545px;\r\n    max-width:545px;\r\n    min-width:545px;\r\n    font-size: 0.7em;\r\n}\r\n\r\n.room_a{\r\n\r\n\r\n    width: 138px;\r\n    max-width:138px;\r\n    min-width:138px;\r\n}\r\n\r\n.team{\r\n\r\n\r\n    width: 447px;\r\n    max-width:447px;\r\n    min-width:447px;\r\n    font-size: 1.2em;\r\n}\r\n\r\n.room_b{\r\n\r\n\r\n    width: 156px;\r\n    max-width:156px;\r\n    min-width:156px;\r\n}\r\n\r\n.my_nowrap {\r\n    white-space: nowrap;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.html":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.html ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<img src=\"/assets/cobappleby.PNG\" height=\"960\" width=\"1920\" style=\"position:fixed; z-index: -10;\">\n<table class=\"table_style\">\n  <tr *ngFor=\"let item of this.csvdatatobedisplayed | slice:0:8;\">\n    <td class=\"time_column my_nowrap center\">{{item.StartTime}} - {{item.EndTime}}</td>\n    <td  class=\"location my_nowrap center\">{{item.Facility|shorten:20 }}</td>\n    <td  class=\"team_event my_nowrap\">&nbsp;{{item.AccountName|shorten:20 }}</td>\n    <td  class=\"room_a my_nowrap center\">{{item.room_a|shorten:20 }}</td>\n    <td  class=\"team my_nowrap center\">{{item.team|shorten:20 }}</td>\n    <td  class=\"room_b my_nowrap center\">{{item.room_b|shorten:20 }}</td>\n  </tr>\n</table>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.ts":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.ts ***!
+  \*********************************************************************************/
+/*! exports provided: CobmountainsidefrntComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CobmountainsidefrntComponent", function() { return CobmountainsidefrntComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_getdata_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/getdata.service */ "./src/app/services/getdata.service.ts");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/moment/moment.js */ "./node_modules/moment/moment.js");
+/* harmony import */ var _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CobmountainsidefrntComponent = /** @class */ (function () {
+    function CobmountainsidefrntComponent(getDataService) {
+        var _this = this;
+        this.getDataService = getDataService;
+        this.csvgetdata = [];
+        this.csvdatatobedisplayed = [];
+        this.tableStyle = '0.7em';
+        setInterval(function () {
+            _this.refreshData();
+        }, 10000);
+    }
+    CobmountainsidefrntComponent.prototype.ngOnInit = function () {
+        // console.log("data")
+        this.event_counter = 0;
+        this.refreshData();
+    };
+    CobmountainsidefrntComponent.prototype.refreshData = function () {
+        var _this = this;
+        this.getDataService.getCSVData("/csvgets/csvmountainside").map(function (response) { return response.json(); }).subscribe(function (data) {
+            _this.csvgetdata = [];
+            _this.csvdatatobedisplayed = [];
+            // console.log(data);
+            for (var i = 0; i < data.length; i++) {
+                var today = new Date();
+                var today_milliseconds = today.getTime();
+                var Event_Day_Start_milliseconds = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].Date, 'D-MMM-YY').valueOf();
+                var Event_Day_End_milliseconds = Event_Day_Start_milliseconds + 86400000;
+                var StartTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].StartTime, 'h:mmA');
+                var EndTime_moment = _node_modules_moment_moment_js__WEBPACK_IMPORTED_MODULE_2__(data[i].EndTime, 'h:mmA');
+                if (today_milliseconds > Event_Day_Start_milliseconds && today_milliseconds < Event_Day_End_milliseconds) {
+                    if (today.getTime() >= StartTime_moment.valueOf() - 7200000 && today.getTime() < EndTime_moment.valueOf() + 1800000) {
+                        console.log("Inserting Data");
+                        _this.csvgetdata.push(data[i]);
+                    }
+                }
+            }
+            var fontChange = false;
+            for (var i = _this.event_counter; i < _this.csvgetdata.length; i++) {
+                _this.csvdatatobedisplayed.push(_this.csvgetdata[i]);
+            }
+            for (var i = 0; i < _this.csvdatatobedisplayed.length; i++) {
+                if (_this.csvdatatobedisplayed[i].Facility == 'Community Room 1') {
+                    _this.csvdatatobedisplayed[i].Facility = "Comm Rm 1";
+                }
+                if (_this.csvdatatobedisplayed[i].Facility == 'Community Room 2') {
+                    _this.csvdatatobedisplayed[i].Facility = "Comm Rm 2";
+                }
+                if (_this.csvdatatobedisplayed[i].AccountName == '') {
+                    _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
+                }
+                if (_this.csvdatatobedisplayed[i].Service == 'Meeting' || _this.csvdatatobedisplayed[i].Service == 'Social') {
+                    _this.csvdatatobedisplayed[i].AccountName = _this.csvdatatobedisplayed[i].Subject;
+                }
+                if (_this.csvdatatobedisplayed[i].AccountName.length > 60) {
+                    _this.tableStyle = "0.5em";
+                    fontChange = true;
+                }
+            }
+            if (!fontChange) {
+                _this.tableStyle = "0.7em";
+            }
+            _this.event_counter = _this.event_counter + 8;
+            if (_this.event_counter >= _this.csvgetdata.length) {
+                _this.event_counter = 0;
+            }
+            else {
+                // $(".table_style").fadeOut();
+                // $(".table_style").fadeIn();
+            }
+        });
+    };
+    CobmountainsidefrntComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cobmountainsidefrnt',
+            template: __webpack_require__(/*! ./cobmountainsidefrnt.component.html */ "./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.html"),
+            styles: [__webpack_require__(/*! ./cobmountainsidefrnt.component.css */ "./src/app/components/cobmountainsidefrnt/cobmountainsidefrnt.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_getdata_service__WEBPACK_IMPORTED_MODULE_1__["GetdataService"]])
+    ], CobmountainsidefrntComponent);
+    return CobmountainsidefrntComponent;
 }());
 
 
@@ -1060,10 +1556,30 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var LoginComponent = /** @class */ (function () {
     function LoginComponent(router, authService) {
+        var _this = this;
         this.router = router;
         this.authService = authService;
         if (authService.loggedIn()) {
-            this.router.navigate(['/bemain/cobtansleyback']);
+            // this.router.navigate(['/bemain/cobtansleyback'])
+            this.authService.getProfile().subscribe(function (user) {
+                _this.user = user;
+                // console.log(this.user[0].user);
+                if (user.account_ID == 'cobtansley') {
+                    _this.router.navigate(['/bemain/cobtansleyback']);
+                }
+                else if (user[0].user.account_ID == 'cobhaber') {
+                    _this.router.navigate(['/bemain/cobhaberback']);
+                }
+                else if (user[0].user.account_ID == 'cobappleby') {
+                    _this.router.navigate(['/bemain/cobapplebyback']);
+                }
+                else if (user[0].user.account_ID == 'cobmountainside') {
+                    _this.router.navigate(['/bemain/cobmountainsideback']);
+                }
+            }, function (err) {
+                ////console.log(err);
+                return false;
+            });
         }
     }
     LoginComponent.prototype.ngOnInit = function () {
@@ -1101,6 +1617,12 @@ var LoginComponent = /** @class */ (function () {
                 }
                 else if (data.user.account_ID == 'cobhaber') {
                     _this.router.navigate(['/bemain/cobhaberback']);
+                }
+                else if (data.user.account_ID == 'cobappleby') {
+                    _this.router.navigate(['/bemain/cobapplebyback']);
+                }
+                else if (data.user.account_ID == 'cobmountainside') {
+                    _this.router.navigate(['/bemain/cobmountainsideback']);
                 }
                 //  location.reload();
             }
@@ -1260,6 +1782,16 @@ var AdddataService = /** @class */ (function () {
     };
     AdddataService.prototype.Haber_sendCSV = function (formdata) {
         var _url = "/additems/haber_csv_upload";
+        return this.http.post(_url, formdata)
+            .catch(this._errorHandler);
+    };
+    AdddataService.prototype.Appleby_sendCSV = function (formdata) {
+        var _url = "/additems/appleby_csv_upload";
+        return this.http.post(_url, formdata)
+            .catch(this._errorHandler);
+    };
+    AdddataService.prototype.MountainSide_sendCSV = function (formdata) {
+        var _url = "/additems/mountainside_csv_upload";
         return this.http.post(_url, formdata)
             .catch(this._errorHandler);
     };

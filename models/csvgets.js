@@ -32,6 +32,34 @@ getCSVHaber:function(){
   
     return(csvjson.toSchemaObject(data, options));
   
-  }
+  },
+  getCSVAppleby:function(){
+
+
+    var data = fs.readFileSync(path.join(__dirname, '../csv/cobappleby.csv'), { encoding : 'utf8'});
+    
+    
+    var options = {
+      delimiter : ',', // optional
+      quote     : '"' // optional
+    };
+    
+      return(csvjson.toSchemaObject(data, options));
+    
+    },
+  getCSVMountainSide:function(){
+
+
+    var data = fs.readFileSync(path.join(__dirname, '../csv/mountainside.csv'), { encoding : 'utf8'});
+    
+    
+    var options = {
+      delimiter : ',', // optional
+      quote     : '"' // optional
+    };
+    
+      return(csvjson.toSchemaObject(data, options));
+    
+    }
 };
 module.exports=CSV_CONVERTER;

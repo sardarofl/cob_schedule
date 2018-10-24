@@ -33,8 +33,31 @@ router.post('/haber_csv_upload',function(req,res){
 	  });
 });
 
+router.post('/appleby_csv_upload',function(req,res){
+	var req = req;
+	var res = res;
 
+	  Add.AppleByUploadCSV(req,res, (err, category) =>{
+	    if(err){
+	     res.json({success:false, msg:'Failed to upload'});
+	    }else{
+	     res.json({success:true, msg:'uploaded'});
+	    }
+	  });
+});
 
+router.post('/mountainside_csv_upload',function(req,res){
+	var req = req;
+	var res = res;
+
+	  Add.MountainSideUploadCSV(req,res, (err, category) =>{
+	    if(err){
+	     res.json({success:false, msg:'Failed to upload'});
+	    }else{
+	     res.json({success:true, msg:'uploaded'});
+	    }
+	  });
+});
 
 
 module.exports = router;

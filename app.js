@@ -107,6 +107,14 @@ app.get('/bemain/cobhaberback', (req,res) =>{
   res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
 });
 
+app.get('/bemain/cobapplebyback', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
+});
+
+app.get('/bemain/cobmountainsideback', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
+});
+
 app.get('/bemain/login', (req,res) =>{
   res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
 });
@@ -119,6 +127,13 @@ app.get('/cobhaberfront', (req,res) =>{
   res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
 });
 
+app.get('/cobapplebyfront', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
+});
+
+app.get('/cobmountainsidefront', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'distcobschedule/index.html'));
+});
 
 app.listen(port,  () => {
   console.log('Server started on port'+port);

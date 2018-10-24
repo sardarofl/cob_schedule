@@ -14,4 +14,16 @@ res.json(CSV_CONVERTERS.getCSVHaber());
 
 });
 
+router.get('/csvappleby',function(req,res,next){
+
+    res.json(CSV_CONVERTERS.getCSVAppleby());
+    
+});
+
+router.get('/csvmountainside',function(req,res,next){
+
+    res.json(CSV_CONVERTERS.getCSVMountainSide());
+    
+});
+
 module.exports=router;
