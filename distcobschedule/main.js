@@ -514,7 +514,7 @@ module.exports = "\r\n.custom-file-upload {\r\n    border: 2px solid  #1A237E;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Appleby CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n    </div>\n\n\n    \n"
+module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Appleby CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n      <h4>Please assign titles for column G,H,I on your csv extract as follows: (room_a,team,room_b)</h4>\n    </div>\n\n\n    \n"
 
 /***/ }),
 
@@ -996,7 +996,7 @@ module.exports = "\r\n.custom-file-upload {\r\n    border: 2px solid  #1A237E;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Mountainside CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n    </div>\n\n\n    "
+module.exports = "\n<br><br><br><br>\n<div class=\"center\">\n    <form id = \"formNewCSV\" name =\"formNewCSV\" #CSVData = \"ngForm\" >\n        <label class=\"custom-file-upload\"> Click to add COB Mountainside CSV file\n        <input id=\"image\" name=\"image\" type=\"file\" (change)=\"addCSV();CSVData.reset() \" placeholder=\"Upload a file...\" multiple ngModel/>\n      </label>\n      <br><br>\n      </form>\n      <h4>Please assign titles for column G,H,I on your csv extract as follows: (room_a,team,room_b)</h4>\n    </div>\n\n\n    "
 
 /***/ }),
 
